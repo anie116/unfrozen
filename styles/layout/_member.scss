@@ -1,0 +1,143 @@
+/* member */
+.login {
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    .member-thumb {
+        width: 28px;
+        height: 28px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-right: 5px;
+        position: relative;
+        top: 5px;
+        vertical-align: text-bottom;
+    }
+    @media (max-width: 767px) {
+        .member-name {
+            display: none;
+        }
+    }
+}
+
+/* Task */
+.task-notifications {
+    position: absolute;
+    background: #ccb08a;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    color: black;
+    top: 5px;
+    right: -8px;
+    text-align: center;
+    line-height: 16px;
+}
+.task-content {
+    text-align: left;
+    width: 180px;
+    position: absolute;
+    top: .5rem;
+    right: -5%;
+    transform: translateY(200px);
+    transition: 800ms;
+    z-index: -1;
+    opacity: 0;
+    &:after {
+        content: "";
+        border: transparent 10px solid;
+        border-bottom: #FFF 10px solid;
+        position: absolute;
+        top: -20px;
+        left: 48%;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 0 5px #757575;
+        padding: 0px;
+        overflow: visible;
+        background: white;
+        font-size: .8rem;
+        line-height: 1.5;
+    }
+    li {
+        padding: 10px 16px;
+        margin: 0;
+        border-bottom: #CCC 1px solid;
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        label {
+            display: inline;
+            padding-left: 5px;
+        }
+        &.complete label {
+            text-decoration: line-through;
+        }
+    }
+    &.active {
+        transform: translateY(36px);
+        z-index: 100;
+        opacity: 1;
+    }
+    .wait {
+        display: inline-block;
+        border-radius: 2px;
+        border: #333 1px solid;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+// animate
+@-moz-keyframes reveal-header {
+    0% {
+        top: -4em;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes reveal-header {
+    0% {
+        top: -4em;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes reveal-header {
+    0% {
+        top: -4em;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes reveal-header {
+    0% {
+        top: -4em;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}

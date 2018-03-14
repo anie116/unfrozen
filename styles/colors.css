@@ -1,0 +1,213 @@
+/*** Colors ***/
+#top-nav a:hover {
+  background-color: transparent;
+}
+.button:before,
+.button.light-hover:before {
+  background-color: rgba(255, 255, 255, 0.13);
+}
+.button.dark-hover:before {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+.button.active:before {
+  opacity: 0;
+}
+#gate.light {
+  background-color: #fff;
+  color: #222;
+}
+#gate.light #gate-bar {
+  background-color: #222;
+}
+#gate.dark {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+#gate.dark #gate-bar {
+  background-color: #fff;
+}
+.loading i {
+  color: #fff;
+  opacity: 0.5;
+}
+.loading i.fa-inverse {
+  color: #222;
+  opacity: 1;
+}
+body,
+html {
+  background-color: #fff;
+}
+#customize-panel .title {
+  border-color: #555;
+}
+#customize-panel h2 {
+  background-color: #222;
+  color: #efefef;
+}
+#customize-panel .toggle-button {
+  background-color: #222;
+  color: #efefef;
+}
+#customize-panel a.button {
+  background-color: #111;
+  color: #efefef;
+  border-color: #fff;
+}
+#customize-panel a.button:hover {
+  background-color: #191919;
+}
+#customize-panel .options {
+  border-color: transparent;
+  background-color: #222;
+  color: #efefef;
+}
+#customize-panel .options .options-gate {
+  background-color: #222;
+  background-color: rgba(34, 34, 34, 0.8);
+}
+#customize-panel .options .themes select {
+  background-color: #444;
+  color: #efefef;
+}
+#customize-panel .options .disable-area span {
+  background-color: #444;
+}
+#customize-panel textarea {
+  background-color: #444;
+  color: #efefef;
+}
+#customize-panel .custom-css {
+  background-color: #222;
+  color: #efefef;
+}
+#customize-panel .custom-css h2 {
+  background-color: #444;
+}
+#customize-panel .custom-css h4 {
+  background-color: #181818;
+  color: #ccc;
+}
+#customize-panel .custom-css textarea {
+  border-color: #656565;
+}
+.background-5-light {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+.background-10-light {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.background-15-light {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+.background-20-light {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.background-25-light {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
+.background-30-light {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+.background-35-light {
+  background-color: rgba(255, 255, 255, 0.35) !important;
+}
+.background-40-light {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+.background-45-light {
+  background-color: rgba(255, 255, 255, 0.45) !important;
+}
+.background-50-light {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+.background-55-light {
+  background-color: rgba(255, 255, 255, 0.55) !important;
+}
+.background-60-light {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+.background-65-light {
+  background-color: rgba(255, 255, 255, 0.65) !important;
+}
+.background-70-light {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+.background-75-light {
+  background-color: rgba(255, 255, 255, 0.75) !important;
+}
+.background-80-light {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+.background-85-light {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+.background-90-light {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+.background-95-light {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+.background-100-light {
+  background-color: #fff !important;
+}
+.background-5-dark {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+.background-10-dark {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.background-15-dark {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+}
+.background-20-dark {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+.background-25-dark {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+}
+.background-30-dark {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+.background-35-dark {
+  background-color: rgba(0, 0, 0, 0.35) !important;
+}
+.background-40-dark {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.background-45-dark {
+  background-color: rgba(0, 0, 0, 0.45) !important;
+}
+.background-50-dark {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.background-55-dark {
+  background-color: rgba(0, 0, 0, 0.55) !important;
+}
+.background-60-dark {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+.background-65-dark {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+}
+.background-70-dark {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+.background-75-dark {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+.background-80-dark {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.background-85-dark {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+.background-90-dark {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+.background-95-dark {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+}
+.background-100-dark {
+  background-color: #000 !important;
+}

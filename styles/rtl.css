@@ -1,0 +1,6 @@
+[dir="rtl"] .slider {
+  direction: ltr;
+}
+[dir="rtl"] .slick-next {
+  left: auto;
+}

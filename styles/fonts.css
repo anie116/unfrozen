@@ -1,0 +1,67 @@
+/*** Font Styles / .thin-font-weight, .medium-font-weight, ... ***/
+.thin-font-weight {
+  font-weight: 100 !important;
+}
+.extra-light-font-weight {
+  font-weight: 200 !important;
+}
+.light-font-weight {
+  font-weight: 300 !important;
+}
+.nirmal-font-weight {
+  font-weight: 400 !important;
+}
+.medium-font-weight {
+  font-weight: 500 !important;
+}
+.semi-bold-font-weight {
+  font-weight: 600 !important;
+}
+.bold-font-weight {
+  font-weight: 700 !important;
+}
+.extra-bold-font-weight {
+  font-weight: 800 !important;
+}
+.ultra-font-weight {
+  font-weight: 900 !important;
+}
+.normal-font {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+.heading-font {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+.small-font {
+  font-size: 11px;
+}
+.counter .count {
+  font-family: Helvetica, Arial, Microsoft JhengHei, Arial, Helvetica, sans-serif;
+}
+.font-weight-100 {
+  font-weight: 100;
+}
+.font-weight-200 {
+  font-weight: 200;
+}
+.font-weight-300 {
+  font-weight: 300;
+}
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.font-weight-700 {
+  font-weight: 700;
+}
+.font-weight-800 {
+  font-weight: 800;
+}
+.font-weight-900 {
+  font-weight: 900;
+}
