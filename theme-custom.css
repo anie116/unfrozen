@@ -64,6 +64,143 @@
     left: 0;
     bottom: 0; }
 
+.project__image {
+  display: block;
+  position: relative; }
+  .project__image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block; }
+
+.project__card {
+  position: relative;
+  transition: box-shadow .3s ease; }
+
+.project__card.hover-in {
+  transition: -webkit-transform .2s ease-out;
+  transition: transform .2s ease-out;
+  transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
+
+.project__card.hover-out {
+  transition: -webkit-transform .2s ease-in;
+  transition: transform .2s ease-in;
+  transition: transform .2s ease-in, -webkit-transform .2s ease-in; }
+
+.project:hover .project__image:after {
+  opacity: 1; }
+
+#market .plant-move {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%; }
+
+#market .planned-info .talk {
+  border: none; }
+  #market .planned-info .talk p {
+    border-radius: 5px;
+    background: #136a8a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #267871, #136a8a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #267871, #136a8a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    padding: 10px 0;
+    text-shadow: 0 0 5px #555;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    max-width: 240px;
+    margin: 5px auto 20px; }
+    #market .planned-info .talk p:after {
+      content: "";
+      position: absolute;
+      bottom: -50%;
+      left: 45%;
+      border: transparent 10px solid;
+      border-top: #136a8a 12px solid; }
+
+#market .planned-info button {
+  display: none !important; }
+
+#market .main-market .title {
+  margin-bottom: 4rem;
+  position: relative; }
+  #market .main-market .title:after {
+    content: url(/images/market-line.png);
+    width: 150px;
+    height: 3px;
+    position: absolute;
+    right: -20%;
+    top: 25%; }
+  #market .main-market .title:before {
+    content: url(/images/market-line.png);
+    width: 150px;
+    height: 3px;
+    position: absolute;
+    left: -20%;
+    top: 65%;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  #market .main-market .title h3 {
+    margin: 0; }
+    #market .main-market .title h3 .count {
+      display: inline-block;
+      min-width: 140px;
+      font-size: 1.5em; }
+
+#market .planned-speed {
+  text-align: center;
+  font-size: 10em;
+  position: relative;
+  margin-top: 15%; }
+  #market .planned-speed strong {
+    font-size: 2em;
+    font-weight: 700; }
+  #market .planned-speed .title {
+    position: absolute;
+    right: -20%;
+    top: -35%; }
+
+.sacecraft {
+  margin-top: -2rem;
+  font-size: 6em;
+  color: white;
+  -webkit-animation-name: Spacecraft;
+  animation-name: Spacecraft;
+  -webkit-animation-duration: 2.2s;
+  animation-duration: 2.2s;
+  -webkit-animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  text-align: center; }
+
+@-webkit-keyframes Spacecraft {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  50% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@keyframes Spacecraft {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  50% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
 body > footer {
   padding: 0; }
   body > footer .bottom {

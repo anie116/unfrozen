@@ -33,15 +33,9 @@
 		<link rel="stylesheet" href="lib/linecons/style.css" />
 		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="theme-custom.css" />
+		<link rel="stylesheet" href="styles/nassvideo.css" />
 		<link rel="shortcut icon" href="" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
-		<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png" />
-		<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
-		<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png" />
 	</head>
 	<body class="state1 background-100-e">
 		<div class="ext-nav background-95-h page-transition">
@@ -89,7 +83,10 @@
 			</div>
 		</div>
 		<div class="page-border bottom colors-e background-solid">
-			好識共創<a href="#top" class="hover-effect">To <span class="highlight">Top</span></a></div>
+			<div class="col-md-2">指導單位：<img alt src="images/logo/moc_logo.png" /></div>
+			<div class="col-md-8"><small>Copyright © 2018 Savvy Creation Ltd. All rights reserved. 好識共創有限公司版權所有 保留一切權利。</small></div>
+			<div class="col-md-2"><a href="#top" class="hover-effect"><i class="fa fa-angle-up"></i> <span class="highlight">Top</span></a></div>
+		</div>
 		<div class="page-border left colors-e background-solid">
 			<ul>
 				<li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -174,13 +171,30 @@
 請拉開故事序幕<br >
 訂製一個不一樣的電影故事</strong></p>
 								<div class="big-separator"></div>
-								<p style="padding-top:8em;"><a href="#teaser"><img src="images/icon/mouse.png" width="28" alt="開始" /></a></p>
+								<p style="padding-top:8em;"><a href="#nass"><img src="images/icon/mouse.png" width="28" alt="開始" /></a></p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<section id="nass">
+   			<div class="view">
+    			<div class="nasaVideo">
+     				<video id="nasa" autoplay>
+      					<source src="video/nasa_open.mp4" type="video/mp4"> 
+     				</video>
+    			</div>
+    			<div id='nassContent' class="col-md-4 col-sm-12 text-right">故事從1945的台灣開始...</div>
+    			<div class="clock">
+     				<span class="short-hand"></span>
+     				<span class="long-hand"></span>
+     				<span class="nut"></span>
+    			</div>
+    			<div class="clockbg col-md-4"></div>
+    			<div id='showYear' class="col-md-4 col-sm-12 text-left"><h1></h1></div>
+   			</div>
+        </section>
 		<section id="teaser">
 			<div class="view">
 				<img alt class="bg" src="images/bg/index_Scene2.jpg"/>
@@ -392,6 +406,7 @@
 		<script src="bower_components/textillate/assets/jquery.fittext.js"></script>
 		<script src="bower_components/textillate/jquery.textillate.js"></script>
 		<script src="lib/prism/prism.js"></script>
+		<script src="scripts/nassvideo.js"></script>
 		<script>
 		(function()
 		{

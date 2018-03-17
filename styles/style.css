@@ -655,8 +655,8 @@ textarea {
   height: 25px;
   border-top: 1px solid;
   text-align: center;
-  font-weight: 800;
-  text-transform: uppercase;
+  font-weight: 300;
+  /*text-transform: uppercase;*/
   padding-top: 2px;
   font-size: 12px;
   letter-spacing: 1px;
