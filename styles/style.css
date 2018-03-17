@@ -73,7 +73,7 @@ html {
   line-height: 22px;
 }
 p {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 22px;
   margin-bottom: 11px;
 }
@@ -226,13 +226,13 @@ h3 {
 }
 h4,
 h5 {
-  font-weight: 700;
+  font-weight: 500;
 }
 h6 {
   font-weight: 400;
 }
 strong {
-  font-weight: 500;
+  font-weight: 700;
 }
 b {
   font-weight: 700;
@@ -2493,12 +2493,12 @@ body {
 .circle.big {
   display: inline-block;
   text-align: center;
-  width: 170px;
-  height: 170px;
-  line-height: 170px;
+  width: 250px;
+  height: 250px;
+  line-height: 40px;
   margin: 3px auto;
   border-radius: 50%;
-  font-size: 40px;
+  /*font-size: 24px;*/
   position: relative;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2514,7 +2514,7 @@ body {
   border-radius: 50%;
   left: 0;
   top: 0;
-  border: 1px solid;
+  /*border: 1px solid;*/
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -2531,7 +2531,7 @@ body {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  border: 1px solid;
+  /*border: 1px solid;*/
 }
 .circle.small {
   display: inline-block;
@@ -3042,7 +3042,7 @@ html.mobile .vimeo-bg {
 a.button,
 input.button {
   padding: 13px 24px;
-  font-size: 13px;
+  font-size: 16px;
 }
 .line {
   padding-top: 10px;
@@ -3169,7 +3169,7 @@ input.button {
 .button,
 .btn,
 input.button {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-family: Microsoft JhengHei, "微軟正黑體", Raleway, Arial, Helvetica, sans-serif;
 }
 .separator {
   height: 20px;
@@ -3752,8 +3752,8 @@ ul.pagination li {
 }
 .lead {
   text-align: center;
-  font-size: 16px;
-  margin-bottom: 40px;
+  font-size: 18px;
+  margin-bottom: 30px;
   line-height: 24px;
 }
 .lead.text-left {
