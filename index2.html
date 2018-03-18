@@ -13,7 +13,7 @@
         <!-- Schema.org for Google -->
         <meta itemprop="name" content="國民訂製《解凍人生》- 一個全民參與的劇本創作網站">
         <meta itemprop="description" content="這是一個關於台灣的故事，一個屬於你我的故事，我們需要你的聲音，建構出這塊土地共同的記憶，讓這個台灣故事更有能量，走上螢幕，走入你我的心裡。">
-        <meta itemprop="image" content="">
+        <meta itemprop="image" content="https://www.mzqy.org/photo/FB.png">
         <meta itemprop="url" content="">
         <!-- for Social Media -->
 		<meta property="fb:app_id" content="" />
@@ -22,7 +22,7 @@
 		<meta property="og:site_name" content="國民訂製《解凍人生》" />
 		<meta property="og:title" content="國民訂製《解凍人生》- 一個全民參與的劇本創作網站"/>
 		<meta property="og:description" content="這是一個關於台灣的故事，一個屬於你我的故事，我們需要你的聲音，建構出這塊土地共同的記憶，讓這個台灣故事更有能量，走上螢幕，走入你我的心裡。" />
-		<meta property="og:image" content="" />
+		<meta property="og:image" content="https://www.mzqy.org/photo/FB.png" />
 
 		<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="bower_components/animate.css/animate.min.css" />
@@ -34,6 +34,8 @@
 		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="theme-custom.css" />
 		<link rel="shortcut icon" href="" type="image/x-icon" />
+
+		<link rel="stylesheet" href="styles/airplaneMap.css" />
 		
 		<!-- jQuery -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -176,12 +178,12 @@
 							<div class="col-md-12 text-center">
 								<h3 class="highlight" style="color:#fff">我們想邀您 一起參與<br />一個原創電影劇本的誕生</h3>
 								<p class="lead background-0-b"><strong>
-這應該是一個屬於你我的故事。<br >
-我們需要你的聲音<br >
-而這將建構出這塊土地的聲音<br >
-讓這個故事更有能量，走上銀幕、走入你我的心裡。<br >
-請拉開故事序幕<br >
-訂製一個不一樣的電影故事</strong></p>
+								這應該是一個屬於你我的故事。<br >
+								我們需要你的聲音<br >
+								而這將建構出這塊土地的聲音<br >
+								讓這個故事更有能量，走上銀幕、走入你我的心裡。<br >
+								請拉開故事序幕<br >
+								訂製一個不一樣的電影故事</strong></p>
 								<div class="big-separator"></div>
 								<p style="padding-top:8em;"><a href="#storyline"><img src="images/icon/mouse.png" width="28" alt="開始" /></a></p>
 							</div>
@@ -190,6 +192,26 @@
 				</div>
 			</div>
 		</section>
+		<section id="airplane">
+				<div class="view">
+					<div id="airplaneMapbg"></div>
+					<div id="airplaneMapContent">
+						<div class="MapContenttitle">1945&nbsp;&nbsp;&nbsp;&nbsp;台灣大空襲</div>
+						<div class="MapContent">&nbsp;&nbsp;1945 年 5 月 31 日，早上十點，116 架美軍 B-24 轟炸機、57 架 B25 轟炸機、13 架P38 戰鬥機、6 架 P51 戰鬥機，空襲臺北，進行為時約三小時的密集式轟炸，史稱「台北大空襲」。</div>
+						<div class="MapContent">&nbsp;&nbsp;其中 103 架 B-24 在臺北上空，數梯次交錯轟炸所投下約 1400 枚炸彈，其威力持續在大火中燃燒了一個晚上。</div>
+						<div class="MapContent">&nbsp;&nbsp;其中 103 架 B-24 在臺北上空，數梯次交錯轟炸所投下約 1400 枚炸彈，其威力持續在大火中燃燒了一個晚上。</div>
+						<div class="MapContent">&nbsp;&nbsp;臺大口腔科教授張寬敏回憶，空襲時二十歲，是臺北帝大醫學部(今台大醫學院)二年級學生，他回憶,「轟炸機先由台北盆地東側的總督府，台大醫院開始轟炸，當炸彈落下後立刻燒起很高的火焰，緊接著捲起黑色黃褐色濃煙，景象猶如『羅馬城末日』，一直燒到深夜。」</div>
+						<div class="MapContent">&nbsp;&nbsp;作家鄭清文，當時就讀私立臺北國民中學校(今大同高中)「我們可以看到炸彈像下雨一般的掉下來。然後就是一陣陣的閃光和聲響，大地搖撼起來了。」「臺北那邊有很多地方在冒煙。總督府的火焰不但沒有熄滅，反而越燒越熾烈......。到了黃昏，總督府還在燃燒，整個天空都變成鮮紅了，那火焰一直燒到入夜以後。」</div>
+					</div>
+					<div id="airplaneMap"></div>
+				
+				</div>
+		</section>		
+		
+
+
+
+
 		<section id="storyline">
 			<div class="view">
 				<img alt class="bg" src="images/bg/storyline_b1.jpg"/>
@@ -267,13 +289,13 @@
 								<h3 class="heading text-left">故事加速器</h3>
 								<p class="lead text-left">
 									這是一個融合科幻與歷史元素的故事<br />
-在時空穿梭的旅程中,<br />
-除了我們的創作軌跡,<br />
-你也有機會坐上領航的機長席,<br />
-貢獻你的故事、分享你的回饋。<br />
-一起訂製你想看的電影故事!</p>
-<p class="lead text-left">選擇一個加速器,<br />
-跟我們一起參與這段台灣歷史的冒險旅程吧</p>
+									在時空穿梭的旅程中,<br />
+									除了我們的創作軌跡,<br />
+									你也有機會坐上領航的機長席,<br />
+									貢獻你的故事、分享你的回饋。<br />
+									一起訂製你想看的電影故事!</p>
+									<p class="lead text-left">選擇一個加速器,<br />
+									跟我們一起參與這段台灣歷史的冒險旅程吧</p>
 								<div class="big-separator"></div>
 								<p><img src="images/icon/reply.png" width="32" /><a href="#about" class="background-20-d"> 觀看別人創作</a></p>
 							</div>
@@ -418,6 +440,7 @@
 		<script src="bower_components/textillate/assets/jquery.fittext.js"></script>
 		<script src="bower_components/textillate/jquery.textillate.js"></script>
 		<script src="lib/prism/prism.js"></script>
+		<script src="scripts/airplaneMap.js"></script>
 		<script>
 		(function()
 		{
@@ -471,6 +494,9 @@
                 autoplay: true,
                 lazyLoad: 'ondemand',
             });
-        </script>
+		</script>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNrP5yowsQoNewQfDAz0V5o_rHdM3ZOBo&callback=initMap">
+		</script>
 	</body>
 </html>

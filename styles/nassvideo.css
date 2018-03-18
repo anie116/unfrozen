@@ -1,0 +1,448 @@
+video {
+  width: 100%;
+  height: auto;
+}
+section#nass{
+  width:100%;
+  height:auto;
+  z-index: 101;
+}
+
+/* max-width: 1200px up */
+div.clock{
+  width:150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin-top: -150px;
+  margin-left: -150px;
+}
+div.clockbg{
+ background-image: url("../images/colck.png");
+ width:200px;
+ height: 200px;
+ position: absolute;
+ left: 50%;
+ top:50%;
+ margin-top: -100px;
+ margin-left: -100px;
+}
+div#showYear{
+  color: #ffffff;
+  position: absolute;
+  opacity:1;
+  font-size: 60px; 
+  top:50%;
+  right: 25%;
+}
+div#nassContent{
+  color: #ffffff;
+  position: absolute;
+  opacity:1;
+  font-size: 16px;
+  top:50%;
+  left:25%;
+
+}
+.nut {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 143px;
+  left: 143px;
+  background: #fff;
+}
+
+.short-hand {
+  height: 50px;
+  -webkit-animation: rotation 0.3s infinite linear;
+  -moz-animation: rotation 0.3s infinite linear;
+  -o-animation: rotation 0.3s  infinite linear;
+  animation: rotation 0.3s  infinite linear
+}
+.long-hand {
+  height: 60px;
+  -webkit-animation: unrotation 0.8s  infinite linear;
+  -moz-animation: unrotation 0.8s infinite linear;
+  -o-animation: unrotation 0.8s infinite linear;
+  animation: unrotation 0.8s infinite linear
+}
+.short-hand, .long-hand {
+  width: 2px;
+  background: #fff;
+  position: absolute;
+  top: 149px;
+  left: 149px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform-origin: 0 1px;
+  -moz-transform-origin: 0 1px;
+  -o-transform-origin: 0 1px;
+  transform-origin: 0 1px;
+}
+
+@media (max-width: 1199px) {
+
+div.clock{
+  width:150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin-top: -150px;
+  margin-left: -150px;
+}
+div.clockbg{
+ background-image: url("../images/colck.png");
+ width:200px;
+ height: 200px;
+ position: absolute;
+ left: 50%;
+ top:50%;
+ margin-top: -100px;
+ margin-left: -100px;
+}
+div#showYear{
+  color: #ffffff;
+  position: absolute;
+  opacity:1;
+  font-size: 60px; 
+  top:50%;
+  right: 25%;
+}
+div#nassContent{
+  color: #ffffff;
+  position: absolute;
+  opacity:1;
+  font-size: 16px;
+  top:50%;
+  left:25%;
+
+}
+.nut {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 143px;
+  left: 143px;
+  background: #fff;
+}
+
+.short-hand {
+  height: 50px;
+  -webkit-animation: rotation 0.3s infinite linear;
+  -moz-animation: rotation 0.3s infinite linear;
+  -o-animation: rotation 0.3s  infinite linear;
+  animation: rotation 0.3s  infinite linear
+}
+.long-hand {
+  height: 60px;
+  -webkit-animation: unrotation 0.8s  infinite linear;
+  -moz-animation: unrotation 0.8s infinite linear;
+  -o-animation: unrotation 0.8s infinite linear;
+  animation: unrotation 0.8s infinite linear
+}
+.short-hand, .long-hand {
+  width: 2px;
+  background: #fff;
+  position: absolute;
+  top: 149px;
+  left: 149px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform-origin: 0 1px;
+  -moz-transform-origin: 0 1px;
+  -o-transform-origin: 0 1px;
+  transform-origin: 0 1px;
+}
+
+
+}
+@media (max-width: 991px) {
+
+div.clock{
+  width:150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin-top: -150px;
+  margin-left: -150px;
+}
+div.clockbg{
+ background-image: url("../images/colck.png");
+ width:200px;
+ height: 200px;
+ position: absolute;
+ left: 50%;
+ top:50%;
+ margin-top: -100px;
+ margin-left: -100px;
+}
+div#showYear{
+  color: #ffffff;
+  position: absolute;
+  opacity:1;
+  font-size: 60px; 
+  top:50%;
+  right: 15%;
+}
+div#nassContent{
+  color: #ffffff;
+  position: absolute;
+  opacity:1;
+  font-size: 16px;
+  top:50%;
+  left:15%;
+
+}
+.nut {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 143px;
+  left: 143px;
+  background: #fff;
+}
+
+.short-hand {
+  height: 50px;
+  -webkit-animation: rotation 0.3s infinite linear;
+  -moz-animation: rotation 0.3s infinite linear;
+  -o-animation: rotation 0.3s  infinite linear;
+  animation: rotation 0.3s  infinite linear
+}
+.long-hand {
+  height: 60px;
+  -webkit-animation: unrotation 0.8s  infinite linear;
+  -moz-animation: unrotation 0.8s infinite linear;
+  -o-animation: unrotation 0.8s infinite linear;
+  animation: unrotation 0.8s infinite linear
+}
+.short-hand, .long-hand {
+  width: 2px;
+  background: #fff;
+  position: absolute;
+  top: 149px;
+  left: 149px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform-origin: 0 1px;
+  -moz-transform-origin: 0 1px;
+  -o-transform-origin: 0 1px;
+  transform-origin: 0 1px;
+}
+ 
+
+}
+
+/* 手機版 */
+@media (max-width: 767px) {
+
+div.clock{
+  width:150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin-top: -150px;
+  margin-left: -150px;
+}
+div.clockbg{
+ background-image: url("../images/colck.png");
+ width:200px;
+ height: 200px;
+ position: absolute;
+ left: 50%;
+ top:50%;
+ margin-top: -100px;
+ margin-left: -100px;
+}
+div#showYear{
+  color: #ffffff;
+  position: absolute;
+  opacity:1;
+  font-size: 40px; 
+  /* top:50%; */
+  left: 50%;
+  top:85%;
+  /* bottom: 10%; */
+  margin-left: -55px;
+  /* right: 25%; */
+}
+div#nassContent{
+  color: #ffffff;
+  position: absolute;
+  opacity:1;
+  font-size: 16px;
+  top:10%;
+  left: 50%;
+  margin-left: -75px;
+  /* left:25%; */
+
+}
+.nut {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 143px;
+  left: 143px;
+  background: #fff;
+}
+
+.short-hand {
+  height: 50px;
+  -webkit-animation: rotation 0.3s infinite linear;
+  -moz-animation: rotation 0.3s infinite linear;
+  -o-animation: rotation 0.3s  infinite linear;
+  animation: rotation 0.3s  infinite linear
+}
+.long-hand {
+  height: 60px;
+  -webkit-animation: unrotation 0.8s  infinite linear;
+  -moz-animation: unrotation 0.8s infinite linear;
+  -o-animation: unrotation 0.8s infinite linear;
+  animation: unrotation 0.8s infinite linear
+}
+.short-hand, .long-hand {
+  width: 2px;
+  background: #fff;
+  position: absolute;
+  top: 149px;
+  left: 149px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform-origin: 0 1px;
+  -moz-transform-origin: 0 1px;
+  -o-transform-origin: 0 1px;
+  transform-origin: 0 1px;
+}
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* 順時針 */
+
+@-webkit-keyframes rotation {
+    0% {
+       -webkit-transform: rotate(180deg);
+       transform: rotate(180deg);
+    }
+    100% {
+       -webkit-transform: rotate(-180deg);
+       transform: rotate(-180deg);
+    }
+ }
+ 
+ @-moz-keyframes rotation {
+    0% {
+       -moz-transform: rotate(180deg);
+       transform: rotate(180deg);
+    }
+    100% {
+       -moz-transform: rotate(-180deg);
+       transform: rotate(-180deg);
+    }
+ }
+ 
+ @-o-keyframes rotation {
+    0% {
+       -o-transform: rotate(180deg);
+       transform: rotate(180deg);
+    }
+    100% {
+       -o-transform: rotate(-180deg);
+       transform: rotate(-180deg);
+    }
+ }
+ 
+ 
+ @keyframes rotation {
+    0% {
+       -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+       transform: rotate(180deg);
+    }
+    100% {
+       -webkit-transform: rotate(-180deg);
+       -moz-transform: rotate(-180deg);
+       -o-transform: rotate(-180deg);
+       transform: rotate(-180deg);
+    }
+ }
+ 
+ /* 逆時針 */
+ 
+ @-webkit-keyframes unrotation {
+   0% {
+      -webkit-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+   }
+   100% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+   }
+ }
+ 
+ @-moz-keyframes unrotation {
+   0% {
+      -moz-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+   }
+   100% {
+      -moz-transform: rotate(180deg);
+      transform: rotate(180deg);
+   }
+ }
+ 
+ @-o-keyframes unrotation {
+   0% {
+      -o-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+   }
+   100% {
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+   }
+ }
+ 
+ 
+ @keyframes unrotation {
+   0% {
+      -webkit-transform: rotate(-180deg);
+      -moz-transform: rotate(-180deg);
+      -o-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+   }
+   100% {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+   }
+ }
+ 
