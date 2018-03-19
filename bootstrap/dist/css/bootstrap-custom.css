@@ -1072,11 +1072,11 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-family: Helvetica, Arial, Microsoft JhengHei, "微軟正黑體", LiHei, "黑體", PMingLiu,"新細明體", sans-serif;
+  font-size: 15px;
   line-height: 1.69230769;
   color: #333333;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
 }
 input,
 button,
@@ -2240,7 +2240,7 @@ th {
   text-align: left;
 }
 .table {
-  width: 100%;
+  /*width: 100%;*/
   max-width: 100%;
   margin-bottom: 21px;
 }

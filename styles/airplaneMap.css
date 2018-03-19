@@ -1,0 +1,47 @@
+section#airplaneMap{
+    width:100%;
+    height: 100%;
+
+}
+div#airplaneMapbg{
+    background-image: url("../images/1945.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    z-index: 140;
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    opacity: 0.7;
+}
+div#airplaneMap {
+    height: 800px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 120;
+    /* position: absolute; */
+}
+div#airplaneMapContent{
+    height: 100%;
+    width: 30%;
+    z-index: 150;
+    position: absolute;
+    float: right;
+    right: 0px;
+    background: #ffffff;
+    opacity: 0.6;
+}
+div.MapContent{
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+div.MapContenttitle{
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-weight:bold;
+    font-size: 20px;
+
+}
