@@ -1,0 +1,223 @@
+.d-relative{
+	position: relative;
+}
+section#accelerator{
+	font-size: 0;
+	/*overflow-x: scroll;*/
+	overflow-y: hidden;
+}
+section#accelerator .view .bg{
+	-webkit-filter:blur(3px);
+	-moz-filter:blur(3px);
+	-ms-filter:blur(3px);
+	-o-filter:blur(3px);
+	filter:blur(3px);
+}
+section#accelerator .section > div:nth-of-type(n+2) p{
+	margin-bottom: 0;
+}
+section#accelerator .section li{
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+section#accelerator ol li{
+	list-style-type : upper-alpha;
+}
+.scrollPoint{
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	border:1px solid #fff;
+	border-radius: 50%;
+	background-color: #000;
+	-webkit-box-shadow:  1px 1px 1px 3px rgba(0,0,0,.8), -1px -1px 1px 3px rgba(0,0,0,.8), 1px -1px 1px 3px rgba(0,0,0,.8), -1px 1px 1px 3px rgba(0,0,0,.8);;
+	box-shadow:  1px 1px 1px 3px rgba(0,0,0,.8), -1px -1px 1px 3px rgba(0,0,0,.8), 1px -1px 1px 3px rgba(0,0,0,.8), -1px 1px 1px 3px rgba(0,0,0,.8);;
+}
+
+@media screen and ( min-width : 768px ) {
+	section#accelerator{
+		overflow-x: scroll;	
+	}
+	section#accelerator .view{
+		width: 4100px;
+		display: inline-block;
+	}
+	section#accelerator .section > div{
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 100px;
+	}
+	section#accelerator .section > div:nth-of-type(n+2) .sectionContent{
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	section#accelerator .section > div:nth-of-type(2){
+		vertical-align: middle;
+	}
+	section#accelerator .section .s1{
+		width: 500px;
+	}
+	section#accelerator .section .s2,
+	section#accelerator .section .s4,
+	section#accelerator .section .s6,
+	section#accelerator .section .s7,
+	section#accelerator .section .s8{
+		width: 450px;
+		margin-top: 50px;
+	}
+	section#accelerator .section .s7,
+	section#accelerator .section .s8{
+		width: 350px;
+	}
+	section#accelerator .section .s3,
+	section#accelerator .section .s5{
+		margin-top: 250px;
+	}
+	.miles{
+		font-size: 16px;
+	    letter-spacing: 1.5px;
+	    position: absolute;
+	    bottom: -35px;
+	    left: 895px;
+	}
+	section#accelerator .section > div:nth-of-type(3) .miles{
+		left: 1370px;
+	}
+	section#accelerator .section > div:nth-of-type(4) .miles{
+		left: 1840px;
+	}
+	section#accelerator .section > div:nth-of-type(5) .miles{
+		left: 2340px;
+	}
+	section#accelerator .section > div:nth-of-type(6) .miles{
+		left: 2800px;
+	}
+	section#accelerator .section > div:nth-of-type(7) .miles{
+		left: 3300px;
+	}
+	section#accelerator .section > div:nth-of-type(8) .miles{
+		left: 3750px;
+	}
+	.scrollLine,.scrollLineMiles{
+		position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    height: 1px;
+	    background-color: rgba(255,255,255,.4);
+	    width: 100%;
+	    z-index: 0;
+	}
+	.scrollLineMiles{
+	    height: 8px;
+	    bottom: -4px;
+	    left: 725px;
+	    background-color: rgba(22,154,168,.4);
+	    width: 345px;
+	    border-radius: 4px;
+	}
+	.scrollPoint{
+		bottom: -7px;
+		left: 915px;
+	}
+	.scrollPointUpline{
+		width: 1px;
+		height: 220px;
+		position: absolute;
+		bottom:0;
+		left: 922px;
+		background-color: rgba(255,255,255,.4);
+	}
+	.scrollPointlineActive{
+		position: absolute;
+		width: 8px;
+		background-color: rgba(22,154,168,.4);
+		border-radius: 4px;
+		height: 0;
+		bottom: 4px;
+		left: -4px;
+	}
+	.point > div:nth-of-type(2) > .scrollPoint{
+		left:1390px;
+	}
+	.point > div:nth-of-type(2) > .scrollPointUpline{
+		left:1397px;
+		height:160px;
+	}
+	.point > div:nth-of-type(3) > .scrollPoint{
+		left:1860px;
+	}
+	.point > div:nth-of-type(3) > .scrollPointUpline{
+		left:1867px;
+		height:185px;
+	}
+	.point > div:nth-of-type(4) > .scrollPoint{
+		left:2360px;
+	}
+	.point > div:nth-of-type(4) > .scrollPointUpline{
+		left:2367px;
+		height:160px;
+	}
+	.point > div:nth-of-type(5) > .scrollPoint{
+		left:2830px;
+	}
+	.point > div:nth-of-type(5) > .scrollPointUpline{
+		left:2837px;
+		height:60px;
+	}
+	.point > div:nth-of-type(6) > .scrollPoint{
+		left:3330px;
+	}
+	.point > div:nth-of-type(6) > .scrollPointUpline{
+		left:3337px;
+		height:275px;
+	}
+	.point > div:nth-of-type(7) > .scrollPoint{
+		left:3780px;
+	}
+	.point > div:nth-of-type(7) > .scrollPointUpline{
+		left:3787px;
+		height:335px;
+	}
+}
+@media screen and ( max-width : 767px ){
+	section#accelerator .section > div{
+		display: block;
+		padding:0 10px ;
+		position: relative;
+	}
+	section#accelerator .section > div:nth-of-type(n+2){
+		margin-left: 50px;
+		margin-top: 150px;
+	}
+	section#accelerator .section > div:nth-of-type(n+2) .sectionContent{
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	.miles{
+		font-size: 14px;
+	    letter-spacing: 1.2px;
+	   	background-color: rgba(255,255,255,.3);
+	   	text-align: center;
+	   	position: relative;
+	   	left: 110%;
+	}
+	.scrollPointUpline{
+		display: none;
+	}
+	.scrollLine,.scrollLineMiles{
+		width: 1px;
+		position: absolute;
+		left: 25px;
+		background-color: rgba(255,255,255,.4);
+	}
+	.scrollLineMiles{
+		background-color: rgba(22,154,168,.4);
+	    border-radius: 4px;
+	    width: 8px;
+	    left: 21px;
+	}
+	.scrollPoint{
+		left: 18px;
+	}
+}
