@@ -13,7 +13,7 @@
         <!-- Schema.org for Google -->
         <meta itemprop="name" content="國民訂製《解凍人生》- 一個全民參與的劇本創作網站">
         <meta itemprop="description" content="這是一個關於台灣的故事，一個屬於你我的故事，我們需要你的聲音，建構出這塊土地共同的記憶，讓這個台灣故事更有能量，走上螢幕，走入你我的心裡。">
-        <meta itemprop="image" content="https://www.mzqy.org/photo/FB.png">
+        <meta itemprop="image" content="">
         <meta itemprop="url" content="">
         <!-- for Social Media -->
 		<meta property="fb:app_id" content="" />
@@ -22,7 +22,7 @@
 		<meta property="og:site_name" content="國民訂製《解凍人生》" />
 		<meta property="og:title" content="國民訂製《解凍人生》- 一個全民參與的劇本創作網站"/>
 		<meta property="og:description" content="這是一個關於台灣的故事，一個屬於你我的故事，我們需要你的聲音，建構出這塊土地共同的記憶，讓這個台灣故事更有能量，走上螢幕，走入你我的心裡。" />
-		<meta property="og:image" content="https://www.mzqy.org/photo/FB.png" />
+		<meta property="og:image" content="" />
 
 		<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="bower_components/animate.css/animate.min.css" />
@@ -65,7 +65,7 @@
 							<a href="answers2.html" class="col-md-6 colors-a background-95-a full-height">
 								<div>
 									<span class="side-label">參與故事結果</span>
-									<span class="side-title">故事風向球</span>
+									<span class="side-title">故事風向圖</span>
 								</div>
 							</a>
 							<a href="guestbook.html" class="col-md-6 colors-f background-95-f full-height">
@@ -127,10 +127,10 @@
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#home" class="hover-effect">故事起點</a></li>
-						<li><a href="teaser.html" class="hover-effect">前導預告</a></li>
-						<!--<li><a href="#questions" class="hover-effect">參與故事</a></li>
-						<li><a href="#guestbook" class="hover-effect">參與加速器</a></li>-->
-						<li><a href="#writerbook" class="hover-effect">航行日誌</a></li>
+						<!--<li><a href="teaser.html" class="hover-effect">前導預告</a></li>-->
+						<li><a href="#questions" class="hover-effect">參與故事</a></li>
+						<li><a href="#guestbook" class="hover-effect">參與加速器</a></li>
+						<!--<li><a href="#writerbook" class="hover-effect">航行日誌</a></li>-->
 						<li><a href="#" class="hover-effect"><i class="fa fa-child"></i>推一把，故事更有力</a></li>
 						<li class="hidden-xs"><a class="menu-toggle ext-nav-toggle" data-target=".ext-nav" href="#"><span></span></a></li>
 						<li></li>
@@ -177,21 +177,26 @@
 		<section id="home">
 			<div class="view">
 				<img alt class="bg" src="images/bg/index_Scene1.jpg" />
-				<div class="content home-lynda full-size colors-e background-0">
+				<div class="content home-lynda full-size colors-b background-0">
 					<div class="moving-clouds" style="background-image: url('images/bg/clouds.png');"></div>
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 text-center">
-								<h3 class="highlight" style="color:#fff">我們想邀您 一起參與<br />一個原創電影劇本的誕生</h3>
-								<p class="lead background-0-b"><strong>
-								這應該是一個屬於你我的故事。<br >
-								我們需要你的聲音<br >
-								而這將建構出這塊土地的聲音<br >
-								讓這個故事更有能量，走上銀幕、走入你我的心裡。<br >
-								請拉開故事序幕<br >
-								訂製一個不一樣的電影故事</strong></p>
+								<h3 class="highlight" style="color:#fff">
+									我們想邀您 一起參與<br />一個原創電影劇本的誕生</h3>
+									<h4 class="lead">
+									這應該是一個屬於你我的故事。<br >
+									我們需要你的聲音</h4>
+									<h4 class="lead">而這將建構出這塊土地的聲音<br >
+									讓這個故事更有能量，走上銀幕、走入你我的心裡。</h4>
+									<h4 class="lead">請拉開故事序幕<br >
+									訂製一個不一樣的電影故事</h4>
 								<div class="big-separator"></div>
-								<p style="padding-top:8em;"><a href="#storyline"><img src="images/icon/mouse.png" width="28" alt="開始" /></a></p>
+								<p style="padding-top:4em;" onclick="showYear()"><a href="#map_area"><img src="images/icon/mouse.png" width="28" alt="開始" /></a></p>
+							</div>
+							<div class="big-separator"></div>
+							<div class="col-md-4 text-left">
+								<p style="font-size:10px;color:#D7C4BB;">Image Credit：NASA </p>
 							</div>
 						</div>
 					</div>
@@ -289,21 +294,21 @@
 		<section id="questions">
 			<div class="view">
 				<img alt class="bg" src="images/bg/index_Scene3.jpg" />
-				<div class="content home-lynda full-size colors-e background-0">
+				<div class="content home-lynda full-size colors-b background-0">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 text-center">
-								<div class="textillate highlight" data-textillate-options="{loop:true, in:{effect:'flipInY', reverse:false}, out:{effect:'flipOutY', reverse:false}}" style="padding-top:3em;">
+								<!--<div class="textillate highlight" data-textillate-options="{loop:true, in:{effect:'flipInY', reverse:false}, out:{effect:'flipOutY', reverse:false}}" style="padding-top:3em;">
 									<ul class="texts">
-										<li>前導預告傳送完畢</li>
-										<li>登機門即將關閉</li>
+										<li></li>
+										<li></li>
 									</ul>
-								</div>
-								<h3 style="padding-top:1em;">請開始你的故事航行方向<br />祝你有趟愉快舒適的旅程！</h3>
+								</div>-->
+								<h4 style="padding-top:5em;">前導預告傳送完畢<br />登機門即將關閉</h4>
+								<h4 style="padding-top:0.5em;">請開始你的故事航行方向<br />祝你有趟愉快舒適的旅程！</h4>
 								<p>(請放心，本訊息不會5秒內自動銷毀)</p>
 								<div class="big-separator"></div>
-								<div class="big-separator"></div>
-								<p style="padding-top:5em;"><a href="questions2.html" class="circle background-20-d border">開始航行</a></p>
+								<p style="padding-top:5em;"><strong><a href="questions1.html" class="circle background-0-d border" style="font-size:16px;color:#ffffff;">開始</a></strong></p>
 							</div>
 						</div>
 					</div>
@@ -313,30 +318,22 @@
 		<section id="guestbook">
 			<div class="view">
 				<img alt class="bg" src="images/bg/index_Scene4.jpg" />
-				<div class="content home-lynda full-size colors-e background-0">
+				<div class="content home-lynda full-size colors-b background-0">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-6">
-								<!--<div class="textillate highlight" data-textillate-options="{loop:true, in:{effect:'flipInY', reverse:false}, out:{effect:'flipOutY', reverse:false}}">
-									<ul class="texts">
-										<li></li>
-										<li>為故事增加新點子</li>
-										<li>為角色增加新對白</li>
-										<li>讓故事更有力</li>
-									</ul>
-								</div>-->
-								<h3 class="heading text-left">故事加速器</h3>
-								<p class="lead text-left">
+							<div class="col-md-5 col-md-offset-1">
+								<!--<h3 class="heading text-left">故事加速器</h3>-->
+								<h4 class="lead text-left">
 									這是一個融合科幻與歷史元素的故事<br />
 									在時空穿梭的旅程中,<br />
 									除了我們的創作軌跡,<br />
 									你也有機會坐上領航的機長席,<br />
 									貢獻你的故事、分享你的回饋。<br />
-									一起訂製你想看的電影故事!</p>
-									<p class="lead text-left">選擇一個加速器,<br />
-									跟我們一起參與這段台灣歷史的冒險旅程吧</p>
+									一起訂製你想看的電影故事!</h4>
+								<h4 class="lead text-left">選擇一個加速器,<br />
+									跟我們一起參與這段台灣歷史的冒險旅程吧</h4>
 								<div class="big-separator"></div>
-								<p><img src="images/icon/reply.png" width="32" /><a href="#about" class="background-20-d"> 觀看別人創作</a></p>
+								<p><img src="images/icon/reply.png" width="28" /><a href="guestbook.html"> 觀看別人創作</a></p>
 							</div>
 							<div class="col-md-6">
 <div class="panel-group" id="accordion">
@@ -344,15 +341,15 @@
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-					史料元素
+					史料
 				</a>
 			</h4>
 		</div>
 		<div id="collapseOne" class="panel-collapse collapse in">
 			<div class="panel-body">
 				在田野調查中，我們發現了許多感人或少為人知的史實，想請問，你最有感覺的日據時代家族記憶是什麼？文字或圖片分享不拘。你的記憶，將建構出這塊土地的記憶。
-				<p>文字或圖片分享不拘。你的記憶，將建構出這塊土地的記憶。</p>
-				<p class="text-right"><a href="guestpost1.html" class="button background-20-d border">開始創作</a></p>
+				<p>文字或圖片分享不拘。</p>
+				<p class="text-right"><a href="guestpost1.html" class="button background-20-d border">開始</a></p>
 			</div>
 		</div>
 	</div>
@@ -360,14 +357,14 @@
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-					創意對白
+					劇情
 				</a>
 			</h4>
 		</div>
 		<div id="collapseTwo" class="panel-collapse collapse">
 			<div class="panel-body">
 				如果，真的有一位從日據時代來到現在的人，你最想問他什麼？
-				<p class="text-right"><a href="guestpost2.html" class="button background-20-d border">開始創作</a></p>
+				<p class="text-right"><a href="guestpost2.html" class="button background-20-d border">開始</a></p>
 			</div>
 		</div>
 	</div>
@@ -375,14 +372,14 @@
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-					角色發展
+					角色
 				</a>
 			</h4>
 		</div>
 		<div id="collapseThree" class="panel-collapse collapse">
 			<div class="panel-body">
 				你覺得高原理來到現代之後，可以從事什麼工作最有趣？
-				<p class="text-right"><a href="guestpost3.html" class="button background-20-d border">開始創作</a></p>
+				<p class="text-right"><a href="guestpost3.html" class="button background-20-d border">開始</a></p>
 			</div>
 		</div>
 	</div>
@@ -390,14 +387,14 @@
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-					時空交錯
+					場景
 				</a>
 			</h4>
 		</div>
 		<div id="collapseFour" class="panel-collapse collapse">
 			<div class="panel-body">
 				你覺得當高原理來到現代，看到最感震撼或驚訝的情景，是什麼？
-				<p class="text-right"><a href="guestpost4.html" class="button background-20-d border">開始創作</a></p>
+				<p class="text-right"><a href="guestpost4.html" class="button background-20-d border">開始</a></p>
 			</div>
 		</div>
 	</div>
@@ -405,14 +402,14 @@
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<a data-toggle="collapse" data-parent="#accordion" href="#collapseFives">
-					曖昧情愫
+					愛情
 				</a>
 			</h4>
 		</div>
 		<div id="collapseFives" class="panel-collapse collapse">
 			<div class="panel-body">
 				高原理和暗戀的學姊許舒曼，相約在當時最繁華的榮町（今衡陽路一帶）， 你覺得當時雙方相遇、暗生情愫的情景，會是如何？
-				<p class="text-right"><a href="guestpost5.html" class="button background-20-d border">開始創作</a></p>
+				<p class="text-right"><a href="guestpost5.html" class="button background-20-d border">開始</a></p>
 			</div>
 		</div>
 	</div>
