@@ -19,14 +19,21 @@ section#map_area .bg{
 }
 .map-area img{
 	width: 3473px;
-	transform: translate(0px , 0px) scale(.55);
+	transform: translate(0px , -80px) scale(.55);
 	transform-origin: center center ; 
 	opacity:1;
 	position: absolute;
 	top:50%;
 	left: 50%;
 	margin-top: -958px;
-	margin-left: -1737px;
+	margin-left: -1737px;	
+}
+.map-rotate{
+	animation : map 10s ;
+}
+@keyframes map{
+	0%{transform: translate(0px , 0px) rotateZ(-2deg) scale(.45); }
+	100%{transform: translate(0px , -80px) rotateZ(0deg) scale(.55);}
 }
 .map-point{
 	position: absolute;	
@@ -50,9 +57,9 @@ section#map_area .bg{
 .map-describe p{
 	font-size: 14px;
 }
-#map-button{
-	padding-right: 40px;	
-	padding-left: 40px;	
+#map-button,#map-reset-button{
+	padding-right: 35px;	
+	padding-left: 35px;	
 	border:none;
 	background-color: rgba(77, 56, 36, .75) !important;
 	color : #fff;
@@ -78,9 +85,12 @@ section#map_area .bg{
 		width: 350px;
 		z-index: 5;
 	}
-	#map-button{
+	#map-button,#map-reset-button{
 		position: absolute;
 		bottom: 30px;
+	}
+	#map-reset-button{
+		right:35px;
 	}
 }
 @media screen and ( max-width : 767px ){
