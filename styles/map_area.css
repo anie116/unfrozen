@@ -19,14 +19,21 @@ section#map_area .bg{
 }
 .map-area img{
 	width: 3473px;
-	transform: translate(0px , 0px) scale(.55);
+	transform: translate(0px , -80px) scale(.55);
 	transform-origin: center center ; 
 	opacity:1;
 	position: absolute;
 	top:50%;
 	left: 50%;
 	margin-top: -958px;
-	margin-left: -1737px;
+	margin-left: -1737px;	
+}
+.map-rotate{
+	animation : map 5s ;
+}
+@keyframes map{
+	0%{transform: translate(0px , 0px) rotateZ(-2deg) scale(.45); }
+	100%{transform: translate(0px , -80px) rotateZ(0deg) scale(.55);}
 }
 .map-point{
 	position: absolute;	
@@ -50,9 +57,9 @@ section#map_area .bg{
 .map-describe p{
 	font-size: 14px;
 }
-#map-button{
-	padding-right: 40px;	
-	padding-left: 40px;	
+#map-button,#map-reset-button{
+	padding-right: 35px;	
+	padding-left: 35px;	
 	border:none;
 	background-color: rgba(77, 56, 36, .75) !important;
 	color : #fff;
@@ -69,6 +76,29 @@ section#map_area .bg{
 		margin: auto;
 		margin-left: -225px;
 	}
+	.map-point:nth-of-type(2){
+		/*opacity: 1;*/
+		transform : translate(-93px ,113px) scale(.6);
+	}
+	.map-point:nth-of-type(3){
+		/*opacity: 1;*/
+		transform : translate(45px ,60px) scale(.6);
+	}
+	.map-point:nth-of-type(4){
+		/*opacity: 1;*/
+		transform : translate(0px ,-55px) scale(.6);
+	}
+	.map-point-title{
+		font-size: 18px;
+	    color: #fff;
+	    position: absolute; 
+	    transform: scale(1.5); 
+	    font-weight: 700;
+	    bottom:-10px;
+	    right: -110px;
+	    letter-spacing: 2px;
+	    text-shadow: 1px 1px 15px rgba(0,0,0,.5), -1px -1px 15px rgba(0,0,0,.5);
+	}
 	.map-describe{
 		position: absolute;
 		top: 0;
@@ -78,9 +108,12 @@ section#map_area .bg{
 		width: 350px;
 		z-index: 5;
 	}
-	#map-button{
+	#map-button,#map-reset-button{
 		position: absolute;
 		bottom: 30px;
+	}
+	#map-reset-button{
+		right:35px;
 	}
 }
 @media screen and ( max-width : 767px ){
