@@ -843,7 +843,8 @@ footer.colors-a.border-top {
 }
 .colors-b a,
 a.colors-b {
-  color: #afbda1;
+ /* color: #afbda1;*/
+ color:#ffffff;
 }
 .colors-b a:hover,
 a.colors-b:hover {
@@ -3051,7 +3052,8 @@ footer.colors-d.border-top {
 }
 .colors-e .highlight,
 .colors-e.highlight {
-  color: #A0CAA2;
+  /*color: #A0CAA2;*/
+  color:#787D7B;
 }
 .colors-e .background,
 .colors-e.background {
@@ -3297,7 +3299,7 @@ a.colors-e:hover {
   color: #afbda1;
 }
 #top-nav.colors-e li a:hover {
-  color: inherit;
+  color: #ffffff;
 }
 #top-nav.colors-e .navbar-brand {
   color: #afbda1;
