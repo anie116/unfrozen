@@ -5313,8 +5313,9 @@ a.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 15px;
+  font-size: 18px;
   color: inherit;
+  border-bottom: #ffffff 1px solid;
 }
 .panel-title > a,
 .panel-title > small,
@@ -6685,7 +6686,7 @@ mark,
 pre,
 .bootstrap-background-color {
   background-color: transparent;
-  background-color: rgba(238, 238, 238, 0.1);
+  /*background-color: rgba(238, 238, 238, 0.1);*/
 }
 .badge,
 .breadcrumb > .active,

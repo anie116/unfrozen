@@ -126,7 +126,7 @@ h2 {
   }
 }
 h3 {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 36px;
 }
 @media (max-width: 991px) {
@@ -136,12 +136,12 @@ h3 {
   }
 }
 h4 {
-  font-size: 20px;
+  font-size: 17px;
   line-height: 24px;
 }
 @media (max-width: 991px) {
   h4 {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 18px;
   }
 }
@@ -352,7 +352,7 @@ textarea {
 ==================================================================*/
 #top-nav {
   min-height: 0px;
-  margin: 0 24px;
+  margin: 0 24x;
   border: none;
   border-bottom: 1px solid;
   font-family: "Nanum Gothic", Helvetica, Arial, Microsoft JhengHei, "微軟正黑體", LiHei, "黑體", PMingLiu,"新細明體", sans-serif;
@@ -2471,7 +2471,7 @@ body {
   border-radius: 50%;
   left: 0;
   top: 0;
-  border: 1px solid;
+  /*border: 1px solid;*/
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -2488,7 +2488,7 @@ body {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  border: 1px solid;
+  /*border: 1px solid;*/
 }
 .circle.big {
   display: inline-block;
