@@ -24,9 +24,9 @@ $(document).ready(function(){
 		$("#map-button").unbind( "click" ).click(function(e){
 			e.preventDefault();
 			$(".map-area img").removeClass("map-rotate");
-			$(".map-point").eq(1).css({"opacity":"0"});
-			$(".map-point").eq(2).css({"opacity":"0"});
-			$(".map-point").eq(3).css({"opacity":"0"});
+			$(".map-point").eq(1).css({"opacity":"0","transition":"0s"});
+			$(".map-point").eq(2).css({"opacity":"0","transition":"0s"});
+			$(".map-point").eq(3).css({"opacity":"0","transition":"0s"});
 
 			$(".map-point").eq(0).css({"transform":"scale(0)","opacity":"0","transition":"0s"});
 			switch (mapCount) {
@@ -37,7 +37,7 @@ $(document).ready(function(){
 						// transformStr ="translate(320px, -350px) scale(1)";
 						transformStr = "translate(190px, -260px) scale(.75)";
 					}else{
-						transformStr ="translate(755px, -750px) scale(1.5)";
+						transformStr ="translate(370px, -450px) scale(.75)";
 					}		
 				 break;
 				case 1:
@@ -47,7 +47,7 @@ $(document).ready(function(){
 						// transformStr = "translate(160px, -320px) scale(1)";
 						transformStr = "translate(80px, -250px) scale(.75";
 					}else{
-						transformStr = "translate(516px, -722px) scale(1.5)";
+						transformStr = "translate(265px, -350px) scale(.75)";
 					}				
 				 break;
 				case 2:
@@ -57,7 +57,7 @@ $(document).ready(function(){
 						// transformStr = "translate(375px, -310px) scale(1)";
 						transformStr = "translate(235px, -235px) scale(.75)";
 					}else{
-						transformStr = "translate(840px, -705px) scale(1.5)";
+						transformStr = "translate(420px, -335px) scale(.75)";
 					}	
 				 break;
 				case 3:
@@ -67,7 +67,7 @@ $(document).ready(function(){
 						// transformStr = "translate(200px, -385px) scale(1)";
 						transformStr = "translate(100px, -285px) scale(.75)";
 					}else{
-						transformStr = "translate(565px, -815px) scale(1.5)";
+						transformStr = "translate(280px, -385px) scale(.75)";
 					}
 				 break;
 				case 4:
@@ -77,7 +77,7 @@ $(document).ready(function(){
 						// transformStr = "translate(100px, -335px) scale(1)";
 						transformStr = "translate(25px, -255px) scale(.75)";
 					}else{
-						transformStr = "translate(425px, -740px) scale(1.5)";
+						transformStr = "translate(210px, -355px) scale(.75)";
 					}	
 				 break;
 				case 5:
@@ -87,7 +87,7 @@ $(document).ready(function(){
 						// transformStr = "translate(390px, -500px) scale(1)";
 						transformStr = "translate(250px, -380px) scale(.75)";
 					}else{
-						transformStr = "translate(855px, -970px) scale(1.5)";
+						transformStr = "translate(425px, -500px) scale(.75)";
 					}
 				 break;
 				case 6:
@@ -97,7 +97,7 @@ $(document).ready(function(){
 						// transformStr = "translate(320px, -455px) scale(1)";
 						transformStr = "translate(190px, -345px) scale(.75)";
 					}else{
-						transformStr = "translate(755px, -923px) scale(1.5)";
+						transformStr = "translate(375px, -440px) scale(.75)";
 					}
 				 break;
 				case 7:
@@ -107,7 +107,7 @@ $(document).ready(function(){
 						// transformStr = "translate(70px, -255px) scale(1)";
 						transformStr = "translate(10px, -180px) scale(.75)";
 					}else{
-						transformStr = "translate(385px, -623px) scale(1.5)";
+						transformStr = "translate(185px, -290px) scale(.75)";
 					}
 				 break;
 				case 8:
@@ -117,7 +117,7 @@ $(document).ready(function(){
 						// transformStr = "translate(15px, -545px) scale(1)";
 						transformStr = "translate(-40px, -395px) scale(.75)";
 					}else{
-						transformStr = "translate(285px, -1040px) scale(1.5)";
+						transformStr = "translate(145px, -490px) scale(.75)";
 					}
 				 break;
 				case 9:
@@ -127,7 +127,7 @@ $(document).ready(function(){
 						// transformStr = "translate(145px, -45px) scale(1)";
 						transformStr = "translate(65px, -30px) scale(.75)";
 					}else{
-						transformStr = "translate(500px, -285px) scale(1.5)";
+						transformStr = "translate(245px, -140px) scale(.75)";
 					}
 				 break;
 				case 10:
@@ -137,7 +137,7 @@ $(document).ready(function(){
 						// transformStr = "translate(225px, -475px) scale(1)";
 						transformStr = "translate(120px, -345px) scale(.75)";
 					}else{
-						transformStr = "translate(610px, -915px) scale(1.5)";
+						transformStr = "translate(295px, -455px) scale(.75)";
 					}
 				 break;
 				case 11:
@@ -147,7 +147,7 @@ $(document).ready(function(){
 						// transformStr = "translate(200px, -555px) scale(1)";
 						transformStr = "translate(100px, -395px) scale(.75)";
 					}else{
-						transformStr = "translate(575px, -1060px) scale(1.5)";
+						transformStr = "translate(295px, -505px) scale(.75)";
 					}
 				 break;
 				case 12:
@@ -157,7 +157,7 @@ $(document).ready(function(){
 						// transformStr = "translate(300px, -820px) scale(1)";
 						transformStr = "translate(180px, -620px) scale(.75)";
 					}else{
-						transformStr = "translate(725px, -1460px) scale(1.5)";
+						transformStr = "translate(360px, -750px) scale(.75)";
 					}
 				 break;
 				case 13:
@@ -167,7 +167,7 @@ $(document).ready(function(){
 						// transformStr = "translate(-20px, 620px) scale(1)";
 						transformStr = "translate(-50px, 470px) scale(.75)";
 					}else{
-						transformStr = "translate(235px, 684px) scale(1.5)";
+						transformStr = "translate(120px, 350px) scale(.75)";
 					}
 				 break;
 				case 14:
@@ -177,7 +177,7 @@ $(document).ready(function(){
 						// transformStr = "translate(140px, 585px) scale(1)";
 						transformStr = "translate(60px, 435px) scale(.75)";
 					}else{
-						transformStr = "translate(480px, 645px) scale(1.5)";
+						transformStr = "translate(240px, 290px) scale(.75)";
 					}
 				 break;
 				case 15:
@@ -187,7 +187,7 @@ $(document).ready(function(){
 						// transformStr = "translate(130px, 150px) scale(1)";
 						transformStr = "translate(60px, 115px) scale(.75)";
 					}else{
-						transformStr = "translate(472px, -10px) scale(1.5)";
+						transformStr = "translate(240px, -10px) scale(.75)";
 					}
 				 break;
 				case 16:
@@ -197,7 +197,7 @@ $(document).ready(function(){
 						// transformStr = "translate(875px, -490px) scale(1)";
 						transformStr = "translate(610px, -370px) scale(.75)";
 					}else{
-						transformStr = "translate(1595px, -968px) scale(1.5)";	
+						transformStr = "translate(795px, -495px) scale(.75)";	
 					}
 				 break;
 				case 17:
@@ -207,7 +207,7 @@ $(document).ready(function(){
 						// transformStr = "translate(825px, 630px) scale(1)";
 						transformStr = "translate(600px, 420px) scale(.75)";
 					}else{
-						transformStr = "translate(1555px, 685px) scale(1.5)";
+						transformStr = "translate(755px, 360px) scale(.75)";
 					}
 				 break;          
 				default :
@@ -217,7 +217,7 @@ $(document).ready(function(){
 						// transformStr ="translate(320px, -350px) scale(1)";
 						transformStr = "translate(190px, -260px) scale(.75)";
 					}else{
-						transformStr ="translate(755px, -750px) scale(1.5)";
+						transformStr ="translate(370px, -450px) scale(.75)";
 					}
 					mapCount = 0;
 				 break;
@@ -239,6 +239,9 @@ $(document).ready(function(){
 		$("#map-reset-button").unbind( "click" ).click(function(e){
 			e.preventDefault();
 			$(".map-area img").removeClass("map-rotate");
+			$(".map-point").eq(1).css({"opacity":"0"});
+			$(".map-point").eq(2).css({"opacity":"0"});
+			$(".map-point").eq(3).css({"opacity":"0"});
 			mapCount = 0;
 			title = "台北大空襲空拍圖";
 			p = "1945 年 5 月 31 日，早上十點， 116 架美軍 B-24 轟炸機、57 架 B25 轟炸機、13 架P38 戰鬥機、6 架 P51 戰鬥機，空襲臺北，進行為時約三小時的密集式轟炸，史稱「台北大空襲」。<br>其中 103 架 B-24 在臺北上空，數梯次交錯轟炸所投下約 1400 枚炸彈，其威力持續在大火中燃燒了一個晚上。<br><br>「轟炸機先由台北盆地東側的總督府，台大醫院開始轟炸，當炸彈落下後立刻燒起很高的火焰，緊接著捲起黑色黃褐色濃煙，景象猶如『羅馬城末日』，一直燒到深夜。」—臺大口腔科教授張寬敏回憶，空襲時二十歲，是臺北帝大醫學部(今台大醫學院)二年級學生<br><br>「我們可以看到炸彈像下雨一般的掉下來。然後就是一陣陣的閃光和聲響，大地搖撼起來了。」「臺北那邊有很多地方在冒煙。總督府的火焰不但沒有熄滅，反而越燒越熾烈......。到了黃昏，總督府還在燃燒，整個天空都變成鮮紅了，那火焰一直燒到入夜以後。」—作家鄭清文回憶，當時就讀私立臺北國民中學校(今大同高中)";
@@ -249,27 +252,24 @@ $(document).ready(function(){
 				$(".map-describe h5.heading").animate({"opacity":"1"},500);
 			});	
 			$(".map-point").eq(0).css({"transform":"scale(0)","opacity":"0","transition":"0s"});
-			$(".map-point").eq(1).delay(500).animate({"opacity":"1"},500,function(){
-				$(".map-point").eq(2).animate({"opacity":"1"},500,function(){
-					$(".map-point").eq(3).animate({"opacity":"1"},500);
-				});
-			})
+			$(".map-point").eq(1).css({"opacity":"1","transition":".5s .5s"});
+			$(".map-point").eq(2).css({"opacity":"1","transition":".5s 1s"});
+			$(".map-point").eq(3).css({"opacity":"1","transition":".5s 1.5s"});
+			mapPointTrigger = 1;
 		});
 	}
 
 	function windowScroll(){
 		//地圖動畫觸發
 		$(".map-area img.map-rotate").css("animation-play-state","paused");
-		var actionTop =  $("section#map_area").offset().top;
+		var actionTop =  $("section#map_area").offset().top - 35;		
 		$(window).scroll(function(){
 			if( $(window).scrollTop() > actionTop ){
 				$(".map-area img.map-rotate").css("animation-play-state","running");
 				if( mapPointTrigger == 0){
-					$(".map-point").eq(1).delay(5000).animate({"opacity":"1"},700,function(){
-						$(".map-point").eq(2).animate({"opacity":"1"},700,function(){
-							$(".map-point").eq(3).animate({"opacity":"1"},700);
-						});
-					})
+					$(".map-point").eq(1).css({"opacity":"1","transition":".7s 5s"});
+					$(".map-point").eq(2).css({"opacity":"1","transition":".7s 5.7s"});
+					$(".map-point").eq(3).css({"opacity":"1","transition":".7s 6.4s"});
 					mapPointTrigger = 1;
 				}
 				
@@ -277,7 +277,6 @@ $(document).ready(function(){
 		});
 	}
 	
-
 	mapPointTrigger = 0;
 	resizeAction();
 	active();
