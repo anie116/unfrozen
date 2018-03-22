@@ -108,11 +108,10 @@ $(document).ready(function(){
 
 		}else{ //rwd
 			// init原點
-			 $("html, body").animate({
-	            scrollTop: 0
-	        },function(){
-	        	
-	        });
+			// $("html, body").animate({
+			//    scrollTop: 0
+			//  },function(){	
+	        // });
 			position();
 		}
 	}
@@ -226,10 +225,7 @@ $(document).ready(function(){
 		}
 		
 	}
-	
-	$(window).resize(function(){
-		windowWidth();
-	});
+
 
 	function device(){
 		if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -238,6 +234,9 @@ $(document).ready(function(){
 		}
 		else {
 		    // alert("使用桌上型裝置!");
+		    $(window).resize(function(){
+				windowWidth();
+			});
 		}
 	}
 

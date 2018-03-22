@@ -281,8 +281,16 @@ $(document).ready(function(){
 	resizeAction();
 	active();
 	windowScroll();
-	$(window).resize(function(){
-		resizeAction();
-		windowScroll();
-	});
+	
+	if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		// alert("使用行動裝置!");
+	}
+	else {
+	    // alert("使用桌上型裝置!");
+	    $(window).resize(function(){
+			resizeAction();
+			windowScroll();
+		});
+	}
+	
 });
