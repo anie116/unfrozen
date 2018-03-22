@@ -78,7 +78,8 @@ p {
   margin-bottom: 11px;
 }
 ul {
-  margin-bottom: 11px;
+  /*margin-bottom: 11px;*/
+  margin-bottom:0px;
 }
 button {
   margin: 2px;
@@ -352,7 +353,7 @@ textarea {
 ==================================================================*/
 #top-nav {
   min-height: 0px;
-  margin: 0 24x;
+  /*margin: 0 24x;*/
   border: none;
   border-bottom: 1px solid;
   font-family: "Nanum Gothic", Helvetica, Arial, Microsoft JhengHei, "微軟正黑體", LiHei, "黑體", PMingLiu,"新細明體", sans-serif;
@@ -3618,7 +3619,7 @@ body > footer .photo > div {
 }
 .bg {
   position: absolute;
-  top: 26px;
+/*  top: 26px;*/
   left: 0;
   pointer-events: none;
   display: block;
