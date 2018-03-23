@@ -137,13 +137,13 @@ h3 {
   }
 }
 h4 {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 24px;
 }
 @media (max-width: 991px) {
   h4 {
-    font-size: 17px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 20px;
   }
 }
 h5 {
@@ -996,7 +996,7 @@ body {
   height: 100%;
 }
 .gallery .grid .item > a img {
-  width: 100%;
+  /*width: 100%;*/
   height: auto;
 }
 .gallery .hover-overlay .overlay > div {
@@ -3515,8 +3515,8 @@ ul.simple li:before {
 }
 .view > .content {
   position: relative;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   -webkit-transition: -webkit-transform 0.5s;
   -moz-transition: -moz-transform 0.5s;
   -o-transition: -o-transform 0.5s;
@@ -3555,8 +3555,8 @@ ul.simple li:before {
   padding-bottom: 60px;
 }
 body > section:first-of-type > .view:first-of-type > .content {
-  padding-top: 80px;
-  padding-bottom: 75px;
+  padding-top: 35px;
+  padding-bottom: 25px;
 }
 @media (max-width: 767px) {
   body > section:first-of-type > .view:first-of-type > .content {

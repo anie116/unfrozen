@@ -11,9 +11,9 @@ module.exports = function(onBodyHeightResize, widgets, unwidgets){
 		var $overlayPrevios = $overlay.find('.previos');
 		var $overlayClose = $overlay.find('.cross');
 		var isFilter = false;
-		var defaultGroup = $gallery.data('default-group') ? $gallery.data('default-group') : 'all';
+		var defaultGroup = $gallery.data('default-group') ? $gallery.data('default-group') : 'bubble';
 		var isNonFirstLayout = false;
-		if(!defaultGroup) defaultGroup = 'all';
+		if(!defaultGroup) defaultGroup = 'bubble';
 		var $grid = $gallery.find('.grid')
 			.shuffle({
 				group: defaultGroup,
@@ -37,7 +37,7 @@ module.exports = function(onBodyHeightResize, widgets, unwidgets){
 			});
 		var $btns = $gallery.find('.filter a');
 		var $itemView = $gallery.find('.item-view');
-		var $all = $gallery.find('.filter a[data-group=all]');
+		var $all = $gallery.find('.filter a[data-group=bubble]');
 		var $items = $grid.find('.item');
 		var currentGroup = defaultGroup;
 		var $currentItem;
@@ -51,7 +51,7 @@ module.exports = function(onBodyHeightResize, widgets, unwidgets){
 			if(isFilter) return;
 			var $this = $(this);
 			var isActive = $this.hasClass( 'active' );
-			var	group = isActive ? 'all' : $this.data('group');
+			var	group = isActive ? 'bubble' : $this.data('group');
 			if(currentGroup !== group){
 				currentGroup = group;
 				$btns.removeClass('active');
@@ -64,7 +64,7 @@ module.exports = function(onBodyHeightResize, widgets, unwidgets){
 				$items.each(function(){
 					var $i = $(this);
 					var filter = eval($i.data('groups'));
-					if( group == 'all' || $.inArray(group, filter)!=-1 ){
+					if( group == 'bubble' || $.inArray(group, filter)!=-1 ){
 						$i.addClass('on');
 					}else{
 						$i.removeClass('on');

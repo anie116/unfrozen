@@ -129,14 +129,14 @@
   margin-bottom: 4rem;
   position: relative; }
   #market .main-market .title:after {
-    content: url(/images/market-line.png);
+    content: url(images/market-line.png);
     width: 150px;
     height: 3px;
     position: absolute;
     right: -20%;
     top: 25%; }
   #market .main-market .title:before {
-    content: url(/images/market-line.png);
+    content: url(images/market-line.png);
     width: 150px;
     height: 3px;
     position: absolute;
