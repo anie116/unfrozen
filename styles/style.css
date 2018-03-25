@@ -394,12 +394,12 @@ textarea {
 }
 @media (max-width: 1199px) {
   #top-nav li {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 @media (max-width: 991px) {
   #top-nav li {
-    font-size: 9px;
+    font-size: 15px;
   }
 }
 #top-nav .navbar-brand {
@@ -966,8 +966,8 @@ body {
 }
 .gallery .filter {
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  /*padding-top: 10px;
+  padding-bottom: 5px;*/
 }
 .gallery .filter .button {
   margin-bottom: 5px;
@@ -978,7 +978,7 @@ body {
   float: none;
 }
 .gallery .filter .nav li a {
-  font-size: 11px;
+  font-size: 15px;
   text-transform: uppercase;
   font-weight: 800;
 }
@@ -987,7 +987,7 @@ body {
   margin: 0px 0px 0px 0px;
 }
 .gallery .grid .item {
-  padding: 0px;
+ padding: 0px;
   cursor: pointer;
 }
 .gallery .grid .item > a {
@@ -998,6 +998,7 @@ body {
 .gallery .grid .item > a img {
   /*width: 100%;*/
   height: auto;
+
 }
 .gallery .hover-overlay .overlay > div {
   padding: 0 25%;
@@ -2472,7 +2473,7 @@ body {
   border-radius: 50%;
   left: 0;
   top: 0;
-  /*border: 1px solid;*/
+  border: 1px solid;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -2515,7 +2516,7 @@ body {
   border-radius: 50%;
   left: 0;
   top: 0;
-  /*border: 1px solid;*/
+  border: 0px solid;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
