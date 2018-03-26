@@ -22,8 +22,8 @@ div.clock{
   position: absolute;
   left: 50%;
   top:50%;
-  margin-top: -150px;
-  margin-left: -150px;
+  margin-top: -75px;
+  margin-left: -75px;
 }
 div.clockbg{
  background-image: url("../images/colck.png");
@@ -38,7 +38,7 @@ div.clockbg{
 }
 div#showYear{
   /*color: #ffffff;*/
-  color: rgba(100%,100%,100%,0.5);
+  color: rgba(100%,100%,100%,0.8);
   position: absolute;
   opacity:1;
   font-size: 60px; 
@@ -47,21 +47,24 @@ div#showYear{
 }
 div#nassContent{
   /*color: #ffffff;*/
-  color: rgba(100%,100%,100%,0.5);
+  color: rgba(100%,100%,100%,0.8);
   position: absolute;
   opacity:1;
   font-size: 24px;
   top:50%;
   left:20%;
-
+  text-shadow: 1px 1px 5px #000;
 }
 .nut {
-  width: 14px;
-  height: 14px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   position: absolute;
-  top: 143px;
-  left: 143px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
   background: #fff;
 }
 
@@ -83,212 +86,61 @@ div#nassContent{
   width: 4px;
   background: #fff;
   position: absolute;
-  top: 149px;
-  left: 149px;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  margin-left: -2px;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
-  -webkit-transform-origin: 0 1px;
-  -moz-transform-origin: 0 1px;
-  -o-transform-origin: 0 1px;
-  transform-origin: 0 1px;
+  -webkit-transform-origin: 2px 0;
+  -moz-transform-origin: 2px 0;
+  -o-transform-origin: 2px 0;
+  transform-origin: 2px 0;
 }
 
 @media (max-width: 1199px) {
 
-div.clock{
-  width:150px;
-  height: 150px;
-  position: absolute;
-  left: 50%;
-  top:50%;
-  margin-top: -150px;
-  margin-left: -150px;
-}
-div.clockbg{
- background-image: url("../images/colck.png");
- background-size:contain;
- width:160px;
- height: 160px;
- position: absolute;
- left: 50%;
- top:50%;
- margin-top: -80px;
- margin-left: -80px;
-}
 div#showYear{
-  /*color: #ffffff;*/
-  color: rgba(100%,100%,100%,0.5);
-  position: absolute;
   opacity:1;
   font-size: 60px; 
   top:50%;
   right: 25%;
 }
 div#nassContent{
-  /*color: #ffffff;*/
-  color: rgba(100%,100%,100%,0.5);
-  position: absolute;
   opacity:1;
   font-size: 24px;
   top:50%;
   left:18%;
 
 }
-.nut {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  position: absolute;
-  top: 143px;
-  left: 143px;
-  background: #fff;
-}
-
-.short-hand {
-  height: 50px;
-  -webkit-animation: rotation 0.3s infinite linear;
-  -moz-animation: rotation 0.3s infinite linear;
-  -o-animation: rotation 0.3s  infinite linear;
-  animation: rotation 0.3s  infinite linear
-}
-.long-hand {
-  height: 60px;
-  -webkit-animation: unrotation 0.8s  infinite linear;
-  -moz-animation: unrotation 0.8s infinite linear;
-  -o-animation: unrotation 0.8s infinite linear;
-  animation: unrotation 0.8s infinite linear
-}
-.short-hand, .long-hand {
-  width: 3px;
-  background: #fff;
-  position: absolute;
-  top: 149px;
-  left: 149px;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-  -webkit-transform-origin: 0 1px;
-  -moz-transform-origin: 0 1px;
-  -o-transform-origin: 0 1px;
-  transform-origin: 0 1px;
-}
 
 
 }
 @media (max-width: 991px) {
 
-div.clock{
-  width:150px;
-  height: 150px;
-  position: absolute;
-  left: 50%;
-  top:50%;
-  margin-top: -150px;
-  margin-left: -150px;
-}
-div.clockbg{
- background-image: url("../images/colck.png");
- background-size:contain;
- width:160px;
- height: 160px;
- position: absolute;
- left: 50%;
- top:50%;
- margin-top: -80px;
- margin-left: -80px;
-}
 div#showYear{
-  /*color: #ffffff;*/
-  color: rgba(100%,100%,100%,0.5);
-  position: absolute;
   opacity:1;
   font-size: 60px; 
   top:50%;
   right: 15%;
 }
 div#nassContent{
-  /*color: #ffffff;*/
-  color: rgba(100%,100%,100%,0.5);
-  position: absolute;
   opacity:1;
   font-size: 16px;
   top:50%;
   left:15%;
 
 }
-.nut {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  position: absolute;
-  top: 143px;
-  left: 143px;
-  background: #fff;
-}
 
-.short-hand {
-  height: 50px;
-  -webkit-animation: rotation 0.3s infinite linear;
-  -moz-animation: rotation 0.3s infinite linear;
-  -o-animation: rotation 0.3s  infinite linear;
-  animation: rotation 0.3s  infinite linear
-}
-.long-hand {
-  height: 60px;
-  -webkit-animation: unrotation 0.8s  infinite linear;
-  -moz-animation: unrotation 0.8s infinite linear;
-  -o-animation: unrotation 0.8s infinite linear;
-  animation: unrotation 0.8s infinite linear
-}
-.short-hand, .long-hand {
-  width: 3px;
-  background: #fff;
-  position: absolute;
-  top: 149px;
-  left: 149px;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-  -webkit-transform-origin: 0 1px;
-  -moz-transform-origin: 0 1px;
-  -o-transform-origin: 0 1px;
-  transform-origin: 0 1px;
-}
- 
 
 }
 
 /* 手機版 */
 @media (max-width: 767px) {
 
-div.clock{
-  width:150px;
-  height: 150px;
-  position: absolute;
-  left: 50%;
-  top:50%;
-  margin-top: -150px;
-  margin-left: -150px;
-}
-div.clockbg{
- background-image: url("../images/colck.png");
- background-size:contain;
- width:160px;
- height: 160px;
- position: absolute;
- left: 50%;
- top:50%;
- margin-top: -80px;
- margin-left: -80px;
-}
 div#showYear{
-  /*color: #ffffff;*/
-  color: rgba(100%,100%,100%,0.5);
-  position: absolute;
   opacity:1;
   font-size: 40px; 
   /* top:50%; */
@@ -299,9 +151,6 @@ div#showYear{
   /* right: 25%; */
 }
 div#nassContent{
-  /*color: #ffffff;*/
-  color: rgba(100%,100%,100%,0.5);
-  position: absolute;
   opacity:1;
   font-size: 16px;
   top:10%;
@@ -309,45 +158,6 @@ div#nassContent{
   margin-left: -75px;
   /* left:25%; */
 
-}
-.nut {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  position: absolute;
-  top: 143px;
-  left: 143px;
-  background: #fff;
-}
-
-.short-hand {
-  height: 50px;
-  -webkit-animation: rotation 0.3s infinite linear;
-  -moz-animation: rotation 0.3s infinite linear;
-  -o-animation: rotation 0.3s  infinite linear;
-  animation: rotation 0.3s  infinite linear
-}
-.long-hand {
-  height: 60px;
-  -webkit-animation: unrotation 0.8s  infinite linear;
-  -moz-animation: unrotation 0.8s infinite linear;
-  -o-animation: unrotation 0.8s infinite linear;
-  animation: unrotation 0.8s infinite linear
-}
-.short-hand, .long-hand {
-  width: 3px;
-  background: #fff;
-  position: absolute;
-  top: 149px;
-  left: 149px;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-  -webkit-transform-origin: 0 1px;
-  -moz-transform-origin: 0 1px;
-  -o-transform-origin: 0 1px;
-  transform-origin: 0 1px;
 }
   
 

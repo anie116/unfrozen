@@ -1,16 +1,28 @@
 $(document).ready(function(){
+	var isAnimate = 0;
 	function scrollLeft(){
 		$('body').on("mousewheel",function(event, delta) { 
 			if( $(window).width() > 767 ){ //pc
 				var left = $("section#accelerator").scrollLeft(); 
-				if( delta > 0 ){ //向上(向左)
-					$("section#accelerator").scrollLeft( left + 30 ) ; // ( delta * 100 )
-
-					milesBar();
+				var screen = $(window).width()/2 ; 
+				if( delta > 0 ){ //向上(向左)					
+					if( isAnimate == 0 ){
+						isAnimate =1;
+						$('section#accelerator').animate({scrollLeft: left+screen }, 800,function(){
+							milesBar();
+							isAnimate =0;
+						});
+					}				
 				}else{ //向下(向右)
-					$("section#accelerator").scrollLeft( left - 30 ) ; // ( delta * 100 )
+					if( isAnimate == 0 ){
+						isAnimate =1;
+						$('section#accelerator').animate({scrollLeft: left-screen }, 800,function(){
+							isAnimate =0;
+						});
+					}
 				}
-				event.preventDefault(); 	
+				event.preventDefault(); 
+				return false;	
 			}
 			
 		}); 

@@ -3,8 +3,10 @@
 }
 section#accelerator{
 	font-size: 0;
-	/*overflow-x: scroll;*/
 	overflow-y: hidden;
+	background-image: url("../images/bg/accelerator.jpg");
+	background-position: center center;
+	background-size: contain;
 }
 section#accelerator .view .bg{
 	-webkit-filter:blur(3px);
