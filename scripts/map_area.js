@@ -222,6 +222,9 @@ $(document).ready(function(){
 					mapCount = 0;
 				 break;
 			}
+			if($(window).width()>767){
+				$(".map-describe").css({"width":"300px"});
+			}
 			$(".map-describe h5.heading").animate({"opacity":"0"},0,function(){
 				$(".map-describe h5.heading").text(title);
 				$(".map-describe p").html(p);
@@ -246,6 +249,9 @@ $(document).ready(function(){
 			title = "台北大空襲空拍圖";
 			p = "1945 年 5 月 31 日，早上十點， 116 架美軍 B-24 轟炸機、57 架 B25 轟炸機、13 架P38 戰鬥機、6 架 P51 戰鬥機，空襲臺北，進行為時約三小時的密集式轟炸，史稱「台北大空襲」。<br>其中 103 架 B-24 在臺北上空，數梯次交錯轟炸所投下約 1400 枚炸彈，其威力持續在大火中燃燒了一個晚上。<br><br>「轟炸機先由台北盆地東側的總督府，台大醫院開始轟炸，當炸彈落下後立刻燒起很高的火焰，緊接著捲起黑色黃褐色濃煙，景象猶如『羅馬城末日』，一直燒到深夜。」—臺大口腔科教授張寬敏回憶，空襲時二十歲，是臺北帝大醫學部(今台大醫學院)二年級學生<br><br>「我們可以看到炸彈像下雨一般的掉下來。然後就是一陣陣的閃光和聲響，大地搖撼起來了。」「臺北那邊有很多地方在冒煙。總督府的火焰不但沒有熄滅，反而越燒越熾烈......。到了黃昏，總督府還在燃燒，整個天空都變成鮮紅了，那火焰一直燒到入夜以後。」—作家鄭清文回憶，當時就讀私立臺北國民中學校(今大同高中)";
 			$(".map-area img").css({"transition":".5s","transform":"translate(0px , -80px) scale(.55)"});
+			if($(window).width()>767){
+				$(".map-describe").css({"width":"500px"});
+			}
 			$(".map-describe h5.heading").animate({"opacity":"0"},0,function(){
 				$(".map-describe h5.heading").text(title);
 				$(".map-describe p").html(p);

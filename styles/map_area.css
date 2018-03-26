@@ -62,9 +62,10 @@ section#map_area .bg{
     top: 0;
 }
 .map-describe{
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(0,0,0,.7);
 	padding:10px 15px;
 	font-size: 14px;
+	color:#ddd;
 }
 .map-describe p{
 	font-size: 14px;
@@ -72,8 +73,6 @@ section#map_area .bg{
 #map-button,#map-reset-button{
 	padding-right: 35px;	
 	padding-left: 35px;	
-	border:none;
-	background-color: rgba(77, 56, 36, .75) !important;
 	color : #fff;
 }
 @media screen and ( max-width : 991px ){
@@ -117,7 +116,7 @@ section#map_area .bg{
 		right: 0;
 		bottom:0;
 		margin: auto;
-		width: 350px;
+		width: 500px;
 		z-index: 5;
 	}
 	#map-button,#map-reset-button{
@@ -137,7 +136,7 @@ section#map_area .bg{
 		min-height:100px;
 	}
 	.map-point{
-		top: 70px;
+		top: 15px;
 		margin-left: -40px;
 		opacity: 0;
 		transform: scale(0);
