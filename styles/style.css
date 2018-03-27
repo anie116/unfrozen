@@ -720,6 +720,8 @@ body {
   -o-transform: translate(-50%, -50%);
   max-width: none;
   line-height: 30px;
+  width: 100%;
+  text-align: center;
 }
 .ext-nav a div span {
   display: block;
