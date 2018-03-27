@@ -7,6 +7,7 @@ section#accelerator{
 	background-image: url("../images/bg/accelerator.jpg");
 	background-position: center center;
 	background-size: contain;
+	background-repeat: no-repeat;
 }
 section#accelerator .view .bg{
 	-webkit-filter:blur(3px);

@@ -379,17 +379,12 @@ textarea {
 #top-nav li {
   text-transform: uppercase;
 }
-section#accelerator {
-	font-size: 0;
-	overflow-y: hidden;
-	background-size: contain;
-	background: url(../images/bg/accelerator.jpg) center center;
-}
+
 section#author {
 	background-size: contain;
 	background: url(../images/bg/savvy.jpg) center center no-repeat;
 }
- .fixedBackground{
+.fixedBackground{
 	width: 100vw;
 	height: 100vh;
 	position: fixed;
