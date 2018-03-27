@@ -3788,14 +3788,19 @@ ul.pagination li {
 }
 .lead {
 	font-weight: 400;
-	letter-spacing:  3px;
 	text-align: center;
+	font-size: 18px;
+	margin-bottom: 30px;
+	line-height: 24px;
+}
+#author .lead {
+  font-weight: 400;
+	letter-spacing:  3px;
 	font-size: 22px;
 	margin-bottom: 30px;
 	line-height: 24px;
 	text-shadow: 2px 2px 4px #000000;
 }
-
 .lead.text-left {
   text-align: left;
 }
