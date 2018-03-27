@@ -34,6 +34,7 @@
 		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="theme-custom.css" />
 		<link rel="stylesheet" href="styles/nassvideo.css" />
+		<link rel="stylesheet" href="styles/nasamap.css" />
 		<link rel="shortcut icon" href="" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 	</head>
@@ -192,8 +193,31 @@
 				</div>
 			</div>
 		</section>
-		<img alt class="bg" src="images/bg/index_nasa.jpg" />
+		<!-- <img alt class="bg" src="images/bg/index_nasa.jpg" /> -->
 		<section id="nass">
+   			<div class="view">
+   				<img alt class="bg" src="images/bg/index_nasa.jpg" />
+				<div class="nasa-map">
+					<img id="nasa-animation" src="images/bg/nasa_map.jpg">
+				</div>	
+				<div class="container full-size">
+					<div class="row">
+						<div id='nassContent'>故事&nbsp;&nbsp;從1945年的台灣開始...</div>
+							<div class="clock">
+								<span class="short-hand"></span>
+								<span class="long-hand"></span>
+								<span class="nut"></span>
+							</div>
+							<div class="clockbg"></div>
+							<div id='showYear'></div>
+							<div class="image_copyright">
+								<p style="font-size:10px;color:#D7C4BB;">Worldview Image Credit：NASA</p>
+							</div>
+					</div>
+				</div>
+   			</div>
+        </section>
+		<!-- <section id="nass">
    			<div class="view">
     			<div class="nasaVideo full-size">
      				<video id="nasa" >
@@ -216,7 +240,7 @@
 					</div>
 				</div>
    			</div>
-        </section>
+        </section> -->
 		<section id="teaser">
 			<div class="view">
 				<img alt class="bg" src="images/bg/index_Scene2.jpg"/>
@@ -224,11 +248,11 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6">
-								<!--<div class="textillate highlight" data-textillate-options="{loop:true, in:{effect:'flipInY', reverse:false}, out:{effect:'flipOutY', reverse:false}}">
+								<div class="textillate highlight" data-textillate-options="{loop:true, in:{effect:'flipInY', reverse:false}, out:{effect:'flipOutY', reverse:false}}">
 									<ul class="texts">
 										<li>前導預告</li>
 									</ul>
-								</div>-->
+								</div>
 							</div>
 							<div class="col-md-6 col-md-offset-6 text-right">
 								<div class="big-separator"></div>
@@ -435,7 +459,8 @@
 		<script src="bower_components/textillate/assets/jquery.fittext.js"></script>
 		<script src="bower_components/textillate/jquery.textillate.js"></script>
 		<script src="lib/prism/prism.js"></script>
-		<script src="scripts/nassvideo.js"></script>
+		<!-- <script src="scripts/nassvideo.js"></script> -->
+		<script src="scripts/nasamap.js"></script>
 		<script src="scripts/facebook.js"></script>
 		<script>
 		(function()
