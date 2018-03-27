@@ -63,12 +63,18 @@ section#map_area .bg{
 }
 .map-describe{
 	background-color: rgba(0,0,0,.7);
-	padding:10px 15px;
+	padding:10px 60px;
 	font-size: 14px;
 	color:#ddd;
 }
+.map-describe h5{
+	margin-bottom: 25px;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 30px;
+}
 .map-describe p{
-	font-size: 14px;
+	font-size: 16px;
 }
 #map-button,#map-reset-button{
 	padding-right: 35px;	
@@ -124,7 +130,7 @@ section#map_area .bg{
 		bottom: 30px;
 	}
 	#map-reset-button{
-		right:15px;
+		right:60px;
 	}
 }
 @media screen and ( max-width : 767px ){

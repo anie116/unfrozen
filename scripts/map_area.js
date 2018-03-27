@@ -223,7 +223,7 @@ $(document).ready(function(){
 				 break;
 			}
 			if($(window).width()>767){
-				$(".map-describe").css({"width":"300px"});
+				$(".map-describe").css({"width":"400px"});
 			}
 			$(".map-describe h5.heading").animate({"opacity":"0"},0,function(){
 				$(".map-describe h5.heading").text(title);
