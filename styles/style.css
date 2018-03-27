@@ -1451,6 +1451,16 @@ body {
 .slider .slick-dots button:before {
   font-size: 14px;
 }
+@media screen and ( max-width : 767px ) {
+  section#storyline .slider{
+    display: none;
+  }
+} 
+@media screen and ( min-width : 768px ) {
+  section#storyline article{
+    display: none;
+  }
+} 
 /*==================================================================
 7. Counters / .counters
 ==================================================================*/
