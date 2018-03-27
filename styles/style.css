@@ -624,7 +624,7 @@ textarea {
 .page-border.left {
   left: 0;
   top: 0;
-  bottom: 24px;
+  bottom: 37px;
   width: 25px;
   border-right: 1px solid;
 }
@@ -645,7 +645,7 @@ textarea {
 .page-border.right {
   right: 0;
   top: 0;
-  bottom: 24px;
+  bottom: 37px;
   width: 25px;
   border-left: 1px solid;
 }
@@ -653,7 +653,7 @@ textarea {
   bottom: 0;
   right: 0;
   left: 0;
-  height: 25px;
+  height: 38px;
   border-top: 1px solid;
   text-align: center;
   font-weight: 300;
