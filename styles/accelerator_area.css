@@ -18,6 +18,9 @@ section#accelerator .view .bg{
 section#accelerator .section > div:nth-of-type(n+2) p{
 	margin-bottom: 0;
 }
+section#accelerator .section h5{
+	color:rgba(22,154,168,.7);
+}
 section#accelerator .section li{
 	font-size: 16px;
 	line-height: 24px;
