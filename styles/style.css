@@ -391,7 +391,9 @@ section#author {
 	background-size: contain;
 	background: url(../images/bg/projects.jpg) top center no-repeat;
 }
-
+.big-separator {
+	padding: 20px 20px;
+}
 @media (max-width: 1199px) {
   #top-nav li a {
     padding: 18px 12px;
