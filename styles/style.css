@@ -695,6 +695,11 @@ body {
   padding-right: 25px;
   padding-top: 48px;
 }
+@media (min-width: 1250px) {
+  section#writerbook{
+    height : calc( 100vh - 60px ) ;
+  }
+}
 @media (max-width: 1249px) {
   body {
     padding-left: 0;
