@@ -302,5 +302,39 @@
 			$('html').addClass('ie11');
 		}
 		</script>
+
+		<!-- ====選單變色===== -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("a[data-toggle='tab']").click(function(){
+					if( !$(this).find("i").hasClass("fa-circle") ){
+						$("a[data-toggle='tab']").each(function(){
+							$(this).find("i").removeClass("fa-circle");
+							$(this).find("i").addClass("fa-circle-o");
+							$(this).find("i").css({"color":"#fff"});
+						});
+					}
+					$(this).find("i").removeClass("fa-circle-o");
+					$(this).find("i").addClass("fa-circle");
+					switch( $(this).attr("href") ){
+						case "#b1" :
+							$(this).find("i").css({"color":"#4ed8da"});
+						break;
+						case "#b2" :
+							$(this).find("i").css({"color":"#eaff00"});
+						break;
+						case "#b3" :
+							$(this).find("i").css({"color":"#ff8ba1"});
+						break;
+						case "#b4" :
+							$(this).find("i").css({"color":"#7ed321"});
+						break;
+						case "#b5" :
+							$(this).find("i").css({"color":"#87b9ff"});
+						break;
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
