@@ -1,0 +1,221 @@
+@media screen and ( min-width: 992px ){
+	/*hover*/
+	.question2-1:hover >div{
+		background-color: rgba(20, 20, 20, 0.6) !important;
+		transition: .5s; 
+	}
+	.question2-1:hover > div > h4 {
+		font-weight: bold;
+		transition: .5s; 
+	}
+	.question2-2-circle-point:hover:after{
+		opacity: 1;
+		transition: .5s;
+	}
+	.question2-2-circle-point:hover > a > h4{
+		color:rgba(255,255,255,1);
+		font-weight: bold;
+		transition: .5s;
+	}
+	.q3point .q3-point:hover > .point-line,.q3point .q3-point:hover{
+		background-color: rgba(255,255,255,1) !important;
+		transition: .5s;
+	}
+	.q3point .q3-point:hover > .q3-content > h4{
+		font-weight: bold;
+		color:rgba(255,255,255,1);
+		transition: .5s;
+	}
+	.q5Hover:hover > i.fa.fa-circle:after{
+		opacity: 1 !important;
+		transition: .5s;
+	}
+	.q5Hover:hover > h4 > a {
+		font-weight: bold;
+	}
+	
+	.question2-2-circle,.question2-2-circle-2{
+		position: absolute;
+		width: 350px;
+		height: 350px;
+		/*background-color: #fff;*/
+		border-radius: 50%;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin: auto; 
+	}
+	.question2-2-circle{
+		background-image: url("../images/questions/q2-2.png");
+		background-size: 150%;
+		background-position: center 60%;
+	}
+	.question2-2-circle-2{
+		width: 400px;
+		height: 400px;
+		background-color: rgba(255,255,255,0);
+		border:2px solid #fff;
+	}
+	.question2-2-circle-point{
+		position: absolute;
+		border-radius: 50%;
+		width: 20px;
+		height: 20px;
+		background-color: #fff;
+	}
+	.question2-2-circle-point:after{
+		content:'';
+		display: block;
+		position: absolute;
+		border-radius: 50%;
+		top: 0;
+		bottom: 0;
+		left: -5px;
+		right: 0;
+		margin: auto;
+		width: 30px;
+		height: 30px;
+		border:1px solid rgba(255,255,255,.5);
+		opacity: 0;
+	}
+	.question2-2-circle-point a{
+		display: inline-block;
+		position: absolute;
+		top: -30px;
+		right: -245px;		
+		width: 220px;
+	}
+	.question2-2-circle-point a h4{
+		color:rgba(255,255,255,.5);
+	}
+	.question2-2-circle-point:nth-of-type(1){
+		top: 55px;
+		right:40px;
+	}
+	.question2-2-circle-point:nth-of-type(2){
+		top: 145px;
+		right: -6px;
+	}
+	.question2-2-circle-point:nth-of-type(3){
+		top: 260px;
+		right: 2px;
+	}
+	.question2-2-circle-point:nth-of-type(4){
+		top: 340px;
+		right: 60px;
+	}
+	.q3point .q3-point{
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		position: absolute;
+		background-color: #fff;
+		top: 0;
+		left:0;
+		bottom: 0;
+		right: 0;
+		margin: auto;
+	}	
+	.q3point .q3-point:nth-of-type(n+2){
+		width: 20px;
+		height: 20px;
+		background-color:rgba(255,255,255,.5);
+		cursor: pointer;
+	}
+	.q3point .q3-point:nth-of-type(2){
+		right: 200px;	
+		top: -250px;	
+	}
+	.q3point .q3-point:nth-of-type(3){
+		right: -300px;
+		top: -150px;		
+	}
+	.q3point .q3-point:nth-of-type(4){
+		right: -400px;	
+		top: 250px;	
+	}
+	.q3point .q3-point:nth-of-type(5){
+		right: 60px;	
+		top: 350px;	
+	}
+	.q3point .q3-point .point-line{
+		width: 360px;
+	    height: 2px;
+	    background-color: rgba(255,255,255,1);
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    margin: auto;
+	    transform: rotateZ(165deg);
+	    transform-origin: 7px 1px;
+	}
+	.q3point .q3-point:nth-of-type(n+2) .point-line{
+		background-color: rgba(255,255,255,.3);
+	}
+	.q3point .q3-point:nth-of-type(2) .point-line{
+		width: 150px;
+	    transform: rotateZ(51deg);
+	    transform-origin: 0px 20px;
+	}
+	.q3point .q3-point:nth-of-type(3) .point-line{
+		width: 165px;
+	    transform: rotateZ(154deg);
+	    transform-origin: 1px 4px;
+	}
+	.q3point .q3-point:nth-of-type(4) .point-line{
+		width: 220px;
+    	transform: rotateZ(212deg);
+    	transform-origin: 0px -1px;
+	}
+	.q3point .q3-point:nth-of-type(5) .point-line{
+		width: 170px;
+	    transform: rotateZ(280deg);
+	    transform-origin: -1px -10px;
+	}
+	section#q3 .circle.big{
+		position: absolute !important;
+		left: 0;
+	}
+	.q3point .q3-point .q3-content{
+		position: absolute;
+	    top: -95px;
+	    left: -100px;
+	    width: 300px;
+	}
+	.q3point .q3-point .q3-content h4{
+		color:rgba(255,255,255,.5);
+	}
+	.q3point .q3-point:nth-of-type(3) .q3-content{
+		width: 200px;
+	    top: -50px;
+	    left: 25px;
+	}
+	.q3point .q3-point:nth-of-type(4) .q3-content{
+	    top: -35px;
+    	left: 25px;
+	}
+	.q3point .q3-point:nth-of-type(5) .q3-content{
+		top: 5px;
+	}
+
+	section#q5 i.fa.fa-circle:after {
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    width: 25px;
+	    height: 25px;
+	    top: -5px;
+	    left: -5px;
+	    border-radius: 50%;
+	    border: 1px solid rgba(255,255,255,.5);
+	    opacity: 0;
+	}
+}
+@media screen and ( max-width: 1199px ){
+	.q3point .q3-point:nth-of-type(1) .point-line{
+		width: 266px;
+	}
+}
