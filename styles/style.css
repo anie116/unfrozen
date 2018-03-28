@@ -394,6 +394,11 @@ section#author {
 .big-separator {
 	padding: 20px 20px;
 }
+#storyline .view {
+	max-width: 1200px;
+	margin: auto auto;
+}
+@med
 @media (max-width: 1199px) {
   #top-nav li a {
     padding: 18px 12px;
