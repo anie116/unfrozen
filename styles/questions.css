@@ -15,6 +15,7 @@
 	.question2-2-circle-point:hover > a > h4{
 		color:rgba(255,255,255,1);
 		font-weight: bold;
+		transform: scale(1.1);
 		transition: .5s;
 	}
 	.q3point .q3-point:hover > .point-line,.q3point .q3-point:hover{
@@ -24,6 +25,7 @@
 	.q3point .q3-point:hover > .q3-content > h4{
 		font-weight: bold;
 		color:rgba(255,255,255,1);
+		transform: scale(1.1);
 		transition: .5s;
 	}
 	.q5Hover:hover > i.fa.fa-circle:after{
@@ -31,7 +33,9 @@
 		transition: .5s;
 	}
 	.q5Hover:hover > h4 > a {
+		font-size: 24px;
 		font-weight: bold;
+		transition: .5s;
 	}
 	
 	.question2-2-circle,.question2-2-circle-2{
@@ -201,6 +205,9 @@
 		top: 5px;
 	}
 
+	.q5Hover{
+		cursor: pointer;
+	}
 	section#q5 i.fa.fa-circle:after {
 	    content: '';
 	    display: block;
