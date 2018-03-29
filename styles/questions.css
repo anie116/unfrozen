@@ -236,7 +236,275 @@
 		transform: scale(1.1);
 		transition: .5s;
 	}
+	.q1-1box-select:hover{
+		transform: scale(1.1);
+		color:rgba(255,255,255,1);
+		transition: .5s;
+	}
+	.q1-1box-select:hover h4{
+		font-weight: bold;
+		color:rgba(255,255,255,1) !important;
+		transition: .5s;
+	}
+	.q1-2box-select:hover .q1-2box-select-circle,
+	.q1-2box-select:hover h4{
+		transform: scale(1.1);
+		color:rgba(255,255,255,1) !important;
+		transition: .5s;
+	}
+	.q1-3box-select:hover{
+		transform: scale(1.1);
+		border-color:rgba(255,255,255,1);
+		transition: .5s;
+	}
+	.q1-3box-select:nth-of-type(2):hover{
+		background-color: rgba(255,255,255,1);
+	}
+	.q1-3box-select:nth-of-type(1):hover h4,
+	.q1-3box-select:nth-of-type(3):hover h4{
+		color:rgba(255,255,255,1) !important;
+		font-weight: bold;
+		transition: .5s;
+	}
+	.q1-3box-select:nth-of-type(2):hover h4{
+		color:rgba(0,0,0,1) !important;
+		font-weight: bold;
+		transition: .5s;
+	}
+	.q1-4box-select:hover .q1-4box-select-circle{
+		border-color: rgb(78, 216, 218);
+		transition: .5s;
+	}
+	.q1-4box-select:hover h4{
+		color:rgb(78, 216, 218) !important;
+		transition: .5s;
+	}
+	.q1-4box-select:hover .q1-4describe{
+		opacity: 1;
+		transition: .5s;
+	}
 
+
+	.q1-1box,
+	.q1-2box,
+	.q1-3box{
+		position: absolute;
+	    top: 50%;
+	    right: 25%;
+	    margin-top: -175px;
+	}
+	.q1-1box img{
+		width: 350px;
+	}
+	.q1-1box-select,
+	.q1-3box-select{
+		position: absolute;
+		border: 1px solid;
+	    border-radius: 50%;
+	    width: 100px;
+	    height: 100px; 
+	    color:rgba(255,255,255,.5);
+	    transition: .5s; 
+	}
+	.q1-1box-select-area .q1-1box-select:nth-of-type(1){
+		top: 0px;
+	    left: -100px;
+	}
+	.q1-1box-select-area .q1-1box-select:nth-of-type(2){
+		top: 0px;
+	    right: -120px;
+	}
+	.q1-1box-select-area .q1-1box-select:nth-of-type(3){
+		top: 50%;
+	    right: -90px;
+	}
+	.q1-1box-select-area .q1-1box-select:nth-of-type(4){
+		top: 95%;
+	    right: -10px;
+	}
+	.q1-1box-select-area .q1-1box-select:nth-of-type(5){
+		top: 70%;
+	    left: -35px;
+	}
+	.q1-1box-select h4,
+	.q1-3box-select h4{
+		padding: 0;
+	    line-height: 100px;
+	    text-align: center;
+	    margin: 0;
+	    transition: .5s;
+	    color:rgba(255,255,255,.5) !important;
+	}
+	.q1-2box .q1-2box-img{
+		width: 300px ;
+		height: 300px ;
+		border-radius: 50%;
+		background-image: url("../images/questions/q1-2.png");
+	    background-size: 105%;
+	    background-position: 50% 50%;
+	    position: relative;
+	}
+	.q1-2box-img-circle{
+		position: absolute;
+		width: 550px;
+		height: 550px;
+		border-radius: 50%;
+		border:1px solid rgba(255,255,255,.5);
+	}
+	.q1-2box-img-circle:nth-of-type(1){
+		top: -80px;
+    	left: -150px;
+	}
+	.q1-2box-img-circle:nth-of-type(2){
+		top: -100px;
+    	right: -195px;
+	}
+	.q1-2box-select-area .q1-2box-select{
+		position: absolute;
+	}
+	.q1-2box-select:nth-of-type(1){
+		top: 0;
+	    left: -88px;
+	}
+	.q1-2box-select:nth-of-type(2){
+		right: -85px;
+    	top: 145px;
+	}
+	.q1-2box-select:nth-of-type(3){
+		right: 80px;
+    	bottom: -139px;
+	}
+	.q1-2box-select:nth-of-type(4){
+		bottom: -78px;
+    	left: -80px;
+	}
+	.q1-2box-select-circle,
+	.q1-4box-select-circle{
+		display: inline-block;
+	    width: 20px;
+	    height: 20px;
+	    border-radius: 50%;
+	    border: 3px solid;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    color:rgba(255,255,255,.5);
+	    transition: .5s;
+	}
+	.q1-2box-select-area .q1-2box-select h4{
+		position: absolute;
+	    top: -1px;
+	    margin: 0;
+	    width: 100px;
+	    left: -80px;
+	    transition: .5s;
+	    transform-origin: 100% 50%;
+	    color:rgba(255,255,255,.5);
+	}
+	.q1-2box-select-area .q1-2box-select:nth-of-type(2) h4,
+	.q1-2box-select-area .q1-2box-select:nth-of-type(3) h4{
+		left: 10px;
+		transform-origin: 0% 50%;
+	}
+	.q1-2box-select-area .q1-2box-select:nth-of-type(4) h4{
+		left: -60px;
+	}
+	.q1-3box{
+		top: 55%;
+		right: 35%;
+	}
+	.q1-3box-img{
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		background-image: url("../images/questions/q1-3.png");
+	    background-size: 105%;
+	    background-position: 50% 50%;
+	    position: relative;
+	}
+	.q1-3box-select:nth-of-type(1){
+		top: 35%;
+    	right: -90px;
+	}
+	.q1-3box-select:nth-of-type(2){
+		top: 35%;
+    	right: -180px;
+    	background-color: rgba(255,255,255,.5);
+    	border: none;
+	}
+	.q1-3box-select:nth-of-type(3){
+		top: 35%;
+    	right: -270px;
+	}
+	.q1-3box-select:nth-of-type(2) h4{
+		color:rgba(0,0,0,.5) !important;
+	}
+	.q1-4box{
+		position: absolute;
+	    top: 50%;
+	    right: 15%;
+	    margin-top: -250px;
+	}
+	.q1-4box-select-circle{
+		border-color: rgba(255,255,255,1);
+	} 
+	.q1-4box-img{
+		width: 500px ;
+		height: 500px ;
+		border-radius: 50%;
+		background-image: url("../images/questions/q1-4.png");
+	    background-size: 100%;
+	    background-position: 50% 50%;
+	    position: relative;
+	}
+	.q1-4box-select-area .q1-4box-select{
+		position: absolute;
+	}
+	.q1-4box-select-area .q1-4box-select h4{
+		position: absolute;
+	    top: -1px;
+	    margin: 0;
+	    padding: 0;
+	    width: 100px;
+	    left: 30px;
+	    transition: .5s;
+	    transform-origin: 100% 50%;
+	    font-weight: bold;
+	    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+	    color:rgba(255,255,255,1);
+	}
+	.q1-4box-select-area .q1-4box-select:nth-of-type(3) h4{
+		left :-75px;
+	}
+	.q1-4box-select-area .q1-4box-select:nth-of-type(1){
+		bottom: 62px;
+    	left: 146px;
+	}
+	.q1-4box-select-area .q1-4box-select:nth-of-type(2){
+		right: 180px;
+		top: 72px;
+	}
+	.q1-4box-select-area .q1-4box-select:nth-of-type(3){
+		top: 77px;
+    	left: 98px;
+	}
+	.q1-4box-select-area .q1-4box-select:nth-of-type(4){
+		bottom: 188px;
+    	right: 93px;
+	}
+	.q1-4describe{
+		position: absolute;
+	    top: 20px;
+	    left: 25px;
+	    width: 150px;
+	    font-weight: bold;
+	    color:rgb(78, 216, 218);
+	    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+	    opacity: 0;
+	}
+	.q1-4box-select-area .q1-4box-select:nth-of-type(3) .q1-4describe{
+		left:-90px;
+	}
 	.q5-left-button{
 		position: absolute;
 	    margin: auto;
