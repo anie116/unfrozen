@@ -182,12 +182,12 @@
 								</div>
 							</div>
 							<div class="col-md-9">
-								<div class="text-center scroll-in-animation player fadeInLeft animated css-animation-show">
+								<div id="svgContainer" class="text-center scroll-in-animation player fadeInLeft animated css-animation-show">
 									<div class="col-md-12">
 										<h4 class="text-center underline-link hidden-md hidden-lg">喜歡這個故事的程度</h4>
 										<div class="col-md-2"><h6 style="color:#434344;">不知道<br /><i class="fa fa-circle" style="color:#434344;"></i></h6></div>
 										<div class="col-md-2"><h4 style="color:#c0c0c0;">普通<br /><i class="fa fa-circle" style="color:#c0c0c0;"></i></h4></div>
-										<div class="col-md-2"><h3 style="line-height:28px;">喜歡<br /><i class="fa fa-circle fa-lg" style="color:#eeff41;"></i></h3></div>
+										<div class="col-md-2"><h3 style="line-height:28px;">喜歡<br /><i id="pointA" class="fa fa-circle fa-lg" style="color:#eeff41;"></i></h3></div>
 										<div class="col-md-3"><h5 style="color:#828283;">很喜歡<br /><i class="fa fa-circle" style="color:#828283;"></i></h5></div>
 										<div class="col-md-3"><h5 style="color:#828283;">非常喜歡<br /><i class="fa fa-circle" style="color:#828283;"></i></h5></div>
 									</div>
@@ -195,26 +195,26 @@
 										<h4 class="text-center underline-link hidden-md hidden-lg">喜歡這個故事是原因</h4>
 										<div class="col-md-3"><h4 style="color:#c0c0c0;">創意<br /><i class="fa fa-circle" style="color:#434344;"></i></h4></div>
 										<div class="col-md-3"><h6 style="color:#434344;">吸引力<br /><i class="fa fa-circle" style="color:#434344;"></i></h6></div>
-										<div class="col-md-3"><h3 style="line-height:28px;">人物角色<br /><i class="fa fa-circle fa-lg" style="color:#eeff41;"></i></h3></div>
+										<div class="col-md-3"><h3 style="line-height:28px;">人物角色<br /><i id="pointB" class="fa fa-circle fa-lg" style="color:#eeff41;"></i></h3></div>
 										<div class="col-md-3"><h5 style="color:#828283;">主題<br /><i class="fa fa-circle" style="color:#828283;"></i></h5></div>
 									</div>
 									<div class="col-md-12">
 										<h4 class="text-center underline-link hidden-md hidden-lg">喜歡這個故事的類型是</h4>
 										<div class="col-md-4"><h6 style="color:#828283;">科幻<br /><i class="fa fa-circle" style="color:#828283;"></i></h6></div>
 										<div class="col-md-4"><h4 style="color:#c0c0c0;">歷史<br /><i class="fa fa-circle" style="color:#c0c0c0;"></i></h4></div>
-										<div class="col-md-4"><h3 style="line-height:28px;">輕喜劇<br /><i class="fa fa-circle fa-lg" style="color:#eeff41;"></i></h3></div>
+										<div class="col-md-4"><h3 style="line-height:28px;">輕喜劇<br /><i id="pointC" class="fa fa-circle fa-lg" style="color:#eeff41;"></i></h3></div>
 									</div>
 									<div class="col-md-12">
 										<h4 class="text-center underline-link hidden-md hidden-lg">期待這個故事的後續發展？</h4>
 										<div class="col-md-3"><h5 style="color:#828283;">有<br /><i class="fa fa-circle" style="color:#828283;"></i></h5></div>
 										<div class="col-md-3"><h6 style="color:#434344;">當然<br /><i class="fa fa-circle" style="color:#434344;"></i></h6></div>
 										<div class="col-md-3"><h5 style="color:#828283;">一定會<br /><i class="fa fa-circle" style="color:#828283;"></i></h5></div>
-										<div class="col-md-3"><h3 style="line-height:28px;">那還用說<br /><i class="fa fa-circle fa-lg" style="color:#eeff41;"></i></h3></div>
+										<div class="col-md-3"><h3 style="line-height:28px;">那還用說<br /><i id="pointD" class="fa fa-circle fa-lg" style="color:#eeff41;"></i></h3></div>
 									</div>
 									<div class="col-md-12">
 										<h4 class="text-center underline-link hidden-md hidden-lg">加入史實會讓更人喜歡這個故事？</h4>
 										<div class="col-md-4"><h3 style="line-height:28px;">當然會<br />
-											<i class="fa fa-circle fa-lg" style="color:#eeff41"></i></h3></div>
+											<i id="pointE" class="fa fa-circle fa-lg" style="color:#eeff41"></i></h3></div>
 										<div class="col-md-4"><h4 style="color:#c0c0c0">還好<br /><i class="fa fa-circle" style="color:#c0c0c0"></i></h4></div>
 										<div class="col-md-4"><h6 style="color:#828283">不會<br /><i class="fa fa-circle" style="color:#828283"></i></h6></div>
 									</div>
@@ -308,5 +308,43 @@
 			$('html').addClass('ie11');
 		}
 		</script>
+
+		
+		<!-- ======個點連線===== -->
+		<script src="scripts/plugIn/jquery-svgline/jquery.html-svg-connect.js" ></script>
+		<style type="text/css">
+			@media screen and ( min-width : 992px ){
+				#svgContainer {
+			      z-index:10;
+			      position: absolute;
+			      opacity: 0.5;
+			    }
+			    svg{
+			    	position: absolute;   
+	    			left: 0;
+			    }
+			}
+			
+		</style>
+		<script type="text/javascript">
+		    $(document).ready(function($) {
+		    	if($(window).width() > 991 ){
+		    		$("#svgContainer").HTMLSVGconnect({
+				        stroke: "#eeff41",
+				        strokeWidth: 3,
+				        orientation: "auto",
+				        paths: [
+				          { start: "#pointA", end: "#pointB", },
+				          { start: "#pointB", end: "#pointC", },
+				          { start: "#pointC", end: "#pointD", orientation:  "horizontal",},
+				          { start: "#pointD", end: "#pointE", orientation:  "horizontal", }
+				        ]
+				      });
+		    	}
+		      
+		    });
+ 		</script>
+		<!-- ======個點連線===== -->
+
 	</body>
 </html>
