@@ -389,7 +389,9 @@ section#author {
 	height: 100vh;
 	position: fixed;
 	background-size: contain;
-	background: url(../images/bg/projects.jpg) top center no-repeat;
+	background: url(../images/bg/projects.jpg);
+  background-position: 20% 100%;
+  background-repeat: no-repeat;
 }
 .big-separator {
 	padding: 20px 20px;
