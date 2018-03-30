@@ -381,8 +381,10 @@ textarea {
 }
 
 section#author {
-	background-size: contain;
-	background: url(../images/bg/savvy.jpg) center center no-repeat;
+	background-size: cover;
+	background-image:  url(../images/bg/savvy.jpg);
+  background-position:  50% 50% ;
+  background-repeat: no-repeat;
 }
 .fixedBackground{
 	width: 100vw;
@@ -394,6 +396,10 @@ section#author {
   background-repeat: no-repeat;
 }
 @media screen and ( max-width : 767px ){
+  section#author {
+    background-position:  0% 0% ;
+    background-attachment: fixed;
+  }
   .textShadow-w{
     text-shadow: 1px 1px 1px rgba(255,255,255,1);
   }
