@@ -28,7 +28,7 @@ $(document).ready(function(){
 			$(".map-point").eq(2).css({"opacity":"0","transition":"0s"});
 			$(".map-point").eq(3).css({"opacity":"0","transition":"0s"});
 
-			$(".map-point").eq(0).css({"transform":"scale(0)","opacity":"0","transition":"0s"});
+			$(".map-point").eq(0).css({"transform":"translate(0px,0px) scale(0)","opacity":"0","transition":"0s"});
 			switch (mapCount) {
 				case 0:
 					title = "當年的臺灣總督府，現今為總統府";
@@ -36,8 +36,10 @@ $(document).ready(function(){
 					if( $(window).width() > 767){
 						// transformStr ="translate(320px, -350px) scale(1)";
 						transformStr = "translate(190px, -260px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}else{
 						transformStr ="translate(370px, -450px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}		
 				 break;
 				case 1:
@@ -46,8 +48,10 @@ $(document).ready(function(){
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(160px, -320px) scale(1)";
 						transformStr = "translate(80px, -250px) scale(.75";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}else{
 						transformStr = "translate(265px, -350px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}				
 				 break;
 				case 2:
@@ -56,8 +60,10 @@ $(document).ready(function(){
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(375px, -310px) scale(1)";
 						transformStr = "translate(235px, -235px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}else{
 						transformStr = "translate(420px, -335px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}	
 				 break;
 				case 3:
@@ -66,8 +72,10 @@ $(document).ready(function(){
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(200px, -385px) scale(1)";
 						transformStr = "translate(100px, -285px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}else{
 						transformStr = "translate(280px, -385px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}
 				 break;
 				case 4:
@@ -76,8 +84,10 @@ $(document).ready(function(){
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(100px, -335px) scale(1)";
 						transformStr = "translate(25px, -255px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}else{
 						transformStr = "translate(210px, -355px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}	
 				 break;
 				case 5:
@@ -85,9 +95,12 @@ $(document).ready(function(){
 					p = "被炸。<br>建物傾毀，現場約10個彈坑落點。<br>現今的國防部後備司令部(亦曾為警備總部)，位於台北市中正區博愛路 172 號。";
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(390px, -500px) scale(1)";
-						transformStr = "translate(250px, -380px) scale(.75)";
+						// transformStr = "translate(250px, -380px) scale(.75)";
+						transformStr = "translate(250px, -280px) scale(.75)";
+						transformPoint = "translate(0px,95px) scale(1)" ;
 					}else{
 						transformStr = "translate(425px, -500px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}
 				 break;
 				case 6:
@@ -95,9 +108,12 @@ $(document).ready(function(){
 					p = "被炸。<br>現今為司法大廈，位於台北市中正區重慶南路一段 124 號。";
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(320px, -455px) scale(1)";
-						transformStr = "translate(190px, -345px) scale(.75)";
+						// transformStr = "translate(190px, -345px) scale(.75)";
+						transformStr = "translate(250px, -280px) scale(.75)";
+						transformPoint = "translate(60px,65px) scale(1)" ;
 					}else{
 						transformStr = "translate(375px, -440px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}
 				 break;
 				case 7:
@@ -106,8 +122,10 @@ $(document).ready(function(){
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(70px, -255px) scale(1)";
 						transformStr = "translate(10px, -180px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}else{
 						transformStr = "translate(185px, -290px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}
 				 break;
 				case 8:
@@ -115,9 +133,12 @@ $(document).ready(function(){
 					p = "現址為台北市中正區中山南路 21 號。";
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(15px, -545px) scale(1)";
-						transformStr = "translate(-40px, -395px) scale(.75)";
+						// transformStr = "translate(-40px, -395px) scale(.75)";
+						transformStr = "translate(-40px, -260px) scale(0.75)";
+						transformPoint = "translate(0px, 150px) scale(1)" ;
 					}else{
 						transformStr = "translate(145px, -490px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}
 				 break;
 				case 9:
@@ -126,8 +147,10 @@ $(document).ready(function(){
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(145px, -45px) scale(1)";
 						transformStr = "translate(65px, -30px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}else{
 						transformStr = "translate(245px, -140px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}
 				 break;
 				case 10:
@@ -135,9 +158,12 @@ $(document).ready(function(){
 					p = "被炸彈正襲，全校滿目瘡痍，校舍嚴重受損，特別是東南角游泳池(今立法院康園餐廳所在)，留下巨大的彈坑。校長伊藤仙藏在巡查校務時不幸殉職，也有老師因此喪命。<br>現址為臺北市中正區重慶南路一段 165 號。";
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(225px, -475px) scale(1)";
-						transformStr = "translate(120px, -345px) scale(.75)";
+						// transformStr = "translate(120px, -345px) scale(.75)";
+						transformStr = "translate(120px, -285px) scale(0.75)";
+						transformPoint = "translate(0px, 60px) scale(1)" ;
 					}else{
 						transformStr = "translate(295px, -455px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}
 				 break;
 				case 11:
@@ -145,9 +171,12 @@ $(document).ready(function(){
 					p = "被炸彈正襲，校舍幾乎全毀。<br>現址為台北市中正區愛國西路 1 號。";
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(200px, -555px) scale(1)";
-						transformStr = "translate(100px, -395px) scale(.75)";
+						// transformStr = "translate(100px, -395px) scale(.75)";
+						transformStr = "translate(120px, -285px) scale(0.75)";
+						transformPoint = "translate(0px,120px) scale(1)" ;
 					}else{
 						transformStr = "translate(295px, -505px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}
 				 break;
 				case 12:
@@ -155,9 +184,12 @@ $(document).ready(function(){
 					p = "臺北一中當時一枚炸彈與兩枚燒夷彈直接命中學校，造成了該紅樓校舍建築大部分毀損，該毀損不但造成紅樓校舍無法使用，也讓戰後復學的建國中學學生借用他校校舍。<br>現址為台北市南海路 56 號。";
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(300px, -820px) scale(1)";
-						transformStr = "translate(180px, -620px) scale(.75)";
+						// transformStr = "translate(180px, -620px) scale(.75)";
+						transformStr = "translate(120px, -320px) scale(0.75)";
+						transformPoint = "translate(-60px, 285px) scale(1)" ;
 					}else{
 						transformStr = "translate(360px, -750px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}
 				 break;
 				case 13:
@@ -165,9 +197,12 @@ $(document).ready(function(){
 					p = "成淵中學二層木造校舍因美機大舉轟炸中彈焚燬。<br>現址為台北市大同區承德路二段 235 號。";
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(-20px, 620px) scale(1)";
-						transformStr = "translate(-50px, 470px) scale(.75)";
+						// transformStr = "translate(-50px, 470px) scale(.75)";
+						transformStr = "translate(-50px, 270px) scale(0.75)";
+						transformPoint = "translate(0px, -200px) scale(1)" ;
 					}else{
 						transformStr = "translate(120px, 350px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}
 				 break;
 				case 14:
@@ -175,9 +210,12 @@ $(document).ready(function(){
 					p = "蓬萊町大聖堂，日治時代台北市內規模最為宏偉的建築之一，轟炸時教堂被炸開，三十公尺高的鐘樓被炸得粉碎，守在裡面的日本防護隊班長圓山太郎，被炸到屍骨無存，在此避難的民眾嚴重傷亡。<br>現址為台北市大同區民生西路 245 號。";
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(140px, 585px) scale(1)";
-						transformStr = "translate(60px, 435px) scale(.75)";
+						// transformStr = "translate(60px, 435px) scale(.75)";
+						transformStr = "translate(-50px, 270px) scale(0.75)";
+						transformPoint = "translate(-110px, -170px) scale(1)" ;
 					}else{
 						transformStr = "translate(240px, 290px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}
 				 break;
 				case 15:
@@ -186,8 +224,10 @@ $(document).ready(function(){
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(130px, 150px) scale(1)";
 						transformStr = "translate(60px, 115px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}else{
 						transformStr = "translate(240px, -10px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}
 				 break;
 				case 16:
@@ -195,9 +235,12 @@ $(document).ready(function(){
 					p = "龍山寺被炸全毀，戰後才修復，包括正殿、左廊均被炸毀，置於寺中的黃土水雕 塑作品「釋迦出山」原作也焚燬於這次大空襲。唯一尚幸者為作品之石膏原模仍 存，現藏臺北市立美術館。<br>現址為台北市萬華區廣州街 211 號。";
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(875px, -490px) scale(1)";
-						transformStr = "translate(610px, -370px) scale(.75)";
+						// transformStr = "translate(610px, -370px) scale(.75)";
+						transformStr = "translate(350px, -280px) scale(0.75)";
+						transformPoint = "translate(-260px, 100px) scale(1)" ;
 					}else{
-						transformStr = "translate(795px, -495px) scale(.75)";	
+						transformStr = "translate(795px, -495px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;	
 					}
 				 break;
 				case 17:
@@ -205,9 +248,12 @@ $(document).ready(function(){
 					p = "現今為三重蘆洲一帶，包含當時的一座日軍高射砲陣地，現為空軍三重一村。<br>現址為新北市三重區正義南路 86 巷。";
 					if( $(window).width() > 767 ){
 						// transformStr = "translate(825px, 630px) scale(1)";
-						transformStr = "translate(600px, 420px) scale(.75)";
+						// transformStr = "translate(600px, 420px) scale(.75)";
+						transformStr = "translate(350px, 280px) scale(0.75)";
+						transformPoint = "translate(-230px, -200px) scale(1)" ;
 					}else{
 						transformStr = "translate(755px, 360px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}
 				 break;          
 				default :
@@ -216,8 +262,10 @@ $(document).ready(function(){
 					if( $(window).width() > 767){
 						// transformStr ="translate(320px, -350px) scale(1)";
 						transformStr = "translate(190px, -260px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}else{
 						transformStr ="translate(370px, -450px) scale(.75)";
+						transformPoint = "translate(0px,0px) scale(1)" ;
 					}
 					mapCount = 0;
 				 break;
@@ -231,7 +279,7 @@ $(document).ready(function(){
 				$(".map-describe h5.heading").animate({"opacity":"1"},500);
 			});	
 
-			$(".map-point").eq(0).css({"transform":"scale(1)","opacity":"1","transition":".5s .5s"});
+			$(".map-point").eq(0).css({"transform": transformPoint ,"opacity":"1","transition":".5s .5s"});
 			$(".map-area img").css({"transition":".8s","transform": transformStr });
 
 			mapCount ++ ;
