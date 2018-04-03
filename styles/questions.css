@@ -1,3 +1,11 @@
+/*手機版*/
+.rwd-textShadow{
+	text-shadow: 1px 1px 2px rgba(0,0,0,1);
+}
+.rwd-selects h4{
+	background-color: rgba(0,0,0,.5);
+	text-align: center;	
+}
 @media screen and ( min-width: 992px ){
 	/*question2*/
 	/*hover*/
