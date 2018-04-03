@@ -1,21 +1,6 @@
 .d-relative{
 	position: relative;
 }
-section#accelerator{
-	font-size: 0;
-	overflow-y: hidden;
-	background-image: url("../images/bg/accelerator.jpg");
-	background-position: center center;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-section#accelerator .view .bg{
-	-webkit-filter:blur(3px);
-	-moz-filter:blur(3px);
-	-ms-filter:blur(3px);
-	-o-filter:blur(3px);
-	filter:blur(3px);
-}
 section#accelerator .section > div:nth-of-type(n+2) p{
 	margin-bottom: 0;
 }
@@ -42,6 +27,21 @@ section#accelerator ol li{
 }
 
 @media screen and ( min-width : 768px ) {
+	section#accelerator{
+		font-size: 0;
+		overflow-y: hidden;
+		background-image: url("../images/bg/accelerator.jpg");
+		background-position: center center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	section#accelerator .view .bg{
+		-webkit-filter:blur(3px);
+		-moz-filter:blur(3px);
+		-ms-filter:blur(3px);
+		-o-filter:blur(3px);
+		filter:blur(3px);
+	}
 	section#accelerator{
 		overflow-x: scroll;	
 	}
@@ -187,6 +187,9 @@ section#accelerator ol li{
 	}
 }
 @media screen and ( max-width : 767px ){
+	.rwdHide{
+		display: none;
+	}
 	section#accelerator .section > div{
 		display: block;
 		padding:0 10px ;
