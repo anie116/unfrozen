@@ -404,6 +404,11 @@ section#author {
     text-shadow: 1px 1px 1px rgba(255,255,255,1);
   }
 }
+@media screen and ( max-width : 991px ){
+  .textShadow-b{
+    text-shadow: 1px 1px 1px rgba(0,0,0,1);
+  }
+}
 
 .big-separator {
 	padding: 20px 20px;
@@ -3847,6 +3852,15 @@ ul.pagination li {
 @media screen and (max-width: 767px){
   #author .lead {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 991px){
+  section#p1 .lead{
+    color:#fff;
+    font-size: 16px;
+  }
+  section#p1 .rwdSpace{
+    margin-top: 50px;
   }
 }
 /*==================================================================
