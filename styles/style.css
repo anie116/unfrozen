@@ -3844,6 +3844,11 @@ ul.pagination li {
   border-width: 0 0 1px 0;
   margin-bottom: 0;
 }
+@media screen and (max-width: 767px){
+  #author .lead {
+    font-size: 14px;
+  }
+}
 /*==================================================================
 23. Blog / .#comments, .avatar, .comment-form, #post-author, .post
 ==================================================================*/
