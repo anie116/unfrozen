@@ -205,3 +205,15 @@ body > footer {
   padding: 0; }
   body > footer .bottom {
     margin: 0; }
+
+
+@media screen and (max-width: 991px ){
+  #market .planned-speed{
+    font-size: 25px;
+  }
+  #market .planned-speed .title{
+    left: 0;
+    right: 0;
+    top:50px;
+  }
+}    
