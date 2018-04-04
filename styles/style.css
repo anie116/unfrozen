@@ -404,11 +404,6 @@ section#author {
     text-shadow: 1px 1px 1px rgba(255,255,255,1);
   }
 }
-@media screen and ( max-width : 991px ){
-  .textShadow-b{
-    text-shadow: 1px 1px 1px rgba(0,0,0,1);
-  }
-}
 
 .big-separator {
 	padding: 20px 20px;
@@ -676,6 +671,7 @@ section#author {
   width: 25px;
   top: 50%;
   left: 0;
+  transform:translateY(-50%);
   -webkit-transform: translateY(-50%);
   padding-left: 0;
   list-style: none;
@@ -3856,7 +3852,7 @@ ul.pagination li {
 }
 @media screen and (max-width: 991px){
   section#p1 .lead{
-    color:#fff;
+    color:#141414;
     font-size: 16px;
   }
   section#p1 .rwdSpace{
@@ -4420,15 +4416,7 @@ p {
 /*==================================================================
 29. Customize Panel / #customize-panel
 ==================================================================*/
-#customize-panel {
-  /*.options{
-		.colors{
-			background-image: url('../images/customize/bg.jpg');
-			background-position: center center;
-			background-size: cover
-		}
-	}*/
-}
+
 #customize-panel {
   position: fixed;
   top: 130px;
