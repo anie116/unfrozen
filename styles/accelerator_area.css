@@ -71,7 +71,6 @@ section#accelerator ol li{
 	section#accelerator .section .s7,
 	section#accelerator .section .s8{
 		width: 450px;
-		margin-top: 50px;
 	}
 	section#accelerator .section .s7,
 	section#accelerator .section .s8{
@@ -79,7 +78,7 @@ section#accelerator ol li{
 	}
 	section#accelerator .section .s3,
 	section#accelerator .section .s5{
-		margin-top: 250px;
+		margin-top: 180px;
 	}
 	.miles{
 		font-size: 16px;
